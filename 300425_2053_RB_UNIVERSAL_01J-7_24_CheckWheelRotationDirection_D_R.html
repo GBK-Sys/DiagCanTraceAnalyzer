@@ -1,0 +1,3381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//HTML 3.2 Final//EN">
+<!-- Start HTML Header -->
+    <HTML><HEAD>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+    <META NAME="Generator" CONTENT="STEPS exec engine Revision: 1.122 ">
+    <TITLE>STEPS Testcase Report: RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R</TITLE>
+	<style type="text/css">
+	/* Reset body padding and margins */
+	body { 
+		margin:0;
+		padding:0;
+		vertical-align:baseline;
+	} 
+	/* Make Header Sticky */
+	#navwrapper { 
+		background:#606060;
+		left:0;
+		position:fixed;
+		width:100%;
+		top:0;
+		overflow:auto;
+	}
+	/* Code for class */
+	.navbar{
+		width:100%;
+	}
+
+	.navbar ul{
+		list-style:none;
+		background:#606060;
+		margin:0;
+		padding:0;
+	}
+
+	.navbar li{
+		display:inline-block;
+		float:left;
+	}
+
+	.navbar li:first-child{
+		margin-left:22px;
+	}
+
+	.navbar a{
+		display:block;
+		padding:5px 10px;
+		font-weight:normal;
+		text-decoration:none;
+		color:#f0f0f0;
+		border-top:2px solid transparent;
+	}
+
+	.navbar a:hover,
+	.navbar li.active a{
+		font-weight:normal;
+		background:#3d3d3d;
+		color:#dddddd;
+		border-top:2px solid #ff4800;
+	}
+
+	.clearFloat{
+		clear:both;
+	}
+	</style>
+    </HEAD>
+<!-- End HTML Header -->
+<!-- Start HTML Body -->
+<BODY DIR=LTR BGCOLOR="#FFFFFF">
+	<!-- BEGIN: Sticky Header -->
+	<DIV class="navbar" ID="navwrapper">
+	<UL>
+    <LI><A href="#TOP">TOP</a></li>
+    <LI><A HREF="#TC_set_parameters">TC_set_parameters (OK)</A></li>
+    <LI><A HREF="#TC_initialization">TC_initialization (OK)</A></li>
+    <LI><A HREF="#TC_stimulation_and_measurement">TC_stimulation_and_measurement (OK)</A></li>
+    <LI><A HREF="#TC_evaluation">TC_evaluation (OK)</A></li>
+    <LI><A HREF="#TC_finalization">TC_finalization (OK)</A></li>
+	<div class="clearFloat"></div>
+	</UL>
+	</DIV>
+	<!-- END: Sticky Header -->
+    <A NAME="TOP">
+    <H1 style="font-family:Arial"><br>STEPS Testcase Report</H1></A>
+
+
+    <HR>
+    <TABLE style="font-family:Courier" CELLSPACING=1 BORDER CELLPADDING=4 WIDTH=626>
+        <TR style="font-weight:bold"><TD WIDTH="40%">Testcase ID</TD>
+            <TD WIDTH="60%">RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R</B></TD></TR>
+        <TR style="font-weight:bold"><TD WIDTH="40%">VERDICT</TD>
+            <TD WIDTH="60%"><B><A HREF="#VERDICT_PASS"><span style="color:green">PASS</span></A></B></TD></TR>
+            <TR><TD WIDTH="40%">Module File:</TD>
+    <TD WIDTH="60%"><A HREF="C:\tas\SST_Repository_YhJC\lib_STEPS_testcases\UNIVERSAL_testcases/R3_0/RB_UNIVERSAL_01J.pm">C:\tas\SST_Repository_YhJC\lib_STEPS_testcases\UNIVERSAL_testcases/R3_0/RB_UNIVERSAL_01J.pm</A></TD></TR>
+    <TR><TD WIDTH="40%">Parameter File:</TD>
+    <TD WIDTH="60%"><A HREF="C:/USER/GRX2KOR/Acceptance_Variant/Steps_AT_Variant_Test/STEPS_12345_config/Testparameter_UNIVERSAL/Testcase_Par/RB_UNIVERSAL_01J.par">C:/USER/GRX2KOR/Acceptance_Variant/Steps_AT_Variant_Test/STEPS_12345_config/Testparameter_UNIVERSAL/Testcase_Par/RB_UNIVERSAL_01J.par</A></TD></TR>
+;
+	<TR><TD WIDTH="40%">Module File:</TD>
+            <TD WIDTH="60%"><A HREF="C:\tas\SST_Repository_YhJC\lib_STEPS_testcases\UNIVERSAL_testcases/R3_0/RB_UNIVERSAL_01J.pm">C:\tas\SST_Repository_YhJC\lib_STEPS_testcases\UNIVERSAL_testcases/R3_0/RB_UNIVERSAL_01J.pm</A></TD></TR>
+        <TR><TD WIDTH="40%">Parameter File:</TD>
+            <TD WIDTH="60%"><A HREF="C:/USER/GRX2KOR/Acceptance_Variant/Steps_AT_Variant_Test/STEPS_12345_config/Testparameter_UNIVERSAL/Testcase_Par/RB_UNIVERSAL_01J.par">C:/USER/GRX2KOR/Acceptance_Variant/Steps_AT_Variant_Test/STEPS_12345_config/Testparameter_UNIVERSAL/Testcase_Par/RB_UNIVERSAL_01J.par</A></TD></TR>
+        <TR><TD WIDTH="40%">LC generation:</TD>
+            <TD WIDTH="60%">LabCar ET</TD></TR>
+        <TR><TD WIDTH="40%">STEPS Version:</TD>
+            <TD WIDTH="60%">STEPS_R6_10</TD></TR>
+        <TR><TD WIDTH="40%">Start Date/Time:</TD>
+            <TD WIDTH="60%">30.04.2025 20:53:06</TD></TR>
+        <TR><TD WIDTH="40%">Duration:</TD>
+            <TD WIDTH="60%">129 sec</TD></TR>
+                <TR><TD WIDTH="40%">STEPS Adapter Version:</TD>
+            <TD WIDTH="60%">RBCCAF StepsAdapter v24.6.2.1 (6.0.14.1)</TD></TR>
+
+                <TR><TD WIDTH="40%">Purpose :</TD>
+            <TD WIDTH="60%">##Revision: 2.4.2## To Execute Stimuli files,Sequence files & monitior CAN,DIAG,ECU Information</TD></TR>
+
+        
+        
+        
+        
+        
+        
+                <TR><TD WIDTH="40%">ECU SW Version:</TD>
+            <TD WIDTH="60%">Alg: 51047 000000000000 </TD></TR>
+
+                <TR><TD WIDTH="40%">EPK String/CommitID:</TD>
+            <TD WIDTH="60%">510470E63_NByBbiGhEfCpce4-XJnPtA_2025-04-25_08:47:47 / _NByBbiGhEfCpce4-XJnPtA</TD></TR>
+
+                <TR><TD WIDTH="40%">SW ALM Stream Snapshot URL:</TD>
+            <TD WIDTH="60%"><A HREF="https://rb-alm-06-p.de.bosch.com/ccm/resource/itemOid/com.ibm.team.scm.BaselineSet/_NByBbiGhEfCpce4-XJnPtA">https://rb-alm-06-p.de.bosch.com/ccm/resource/itemOid/com.ibm.team.scm.BaselineSet/_NByBbiGhEfCpce4-XJnPtA</A></TD></TR>
+
+	        <TR><TD WIDTH="40%">Test ALM Stream Snapshot URL:</TD>
+            <TD WIDTH="60%"><A HREF="__UNKNOWN__">__UNKNOWN__</A></TD></TR>
+
+        
+                <TR><TD WIDTH="40%">LC Model:</TD>
+            <TD WIDTH="60%"><b>Author:</b>SaitoTerumasa<br><b>ProjectName:</b>Honda_ESP9_3_TXAX_001_4WD_Mount_Postion_UpdatedId:181ad901-bb0f-44d1-8ab0-bf31b83599b3<br><b>ProjectNameComment:</b>
+            <br><b>Comment:</b>EMUmodelfor32RAESP9.3(Draft)Note-CreatedwithLabCarDBV19.27Beta0.0PTSsignalsactivatedA51PTSGNDLC:123GIO1D02K11PTSVSLC:127GIO1D05K37PTS1LC:144GIO1D19K38PTS2LC:145GIO1D20K42PTSVSLC:150GIO1D24Date:24April2025<br><b>Date:</b>24April2025<br><b>SchemaVersion:</b><br><b>ToolVersion:</b>6.0.14.0<br><b>RequiredToolVersion:</b>6.0.14.0<br>
+            <b>IsVersionValid:</b>True<br><b>SourceFilePath:</b>C:\CCASTestSystem\Customer\Project\HONDA\TXAX\Honda_ESP9_3_TXAX_001_4WD_Mount_Postion_Updated.hil<br><b>DbVersion:</b>ETV19.64.1.7<br>
+            <b>VersionValidationError:</b></TD></TR>
+
+        
+                <TR><TD WIDTH="40%">Add TC Doc :</TD>
+            <TD WIDTH="60%"><A HREF="0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc.zip">0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc.zip</A></TD></TR>
+
+    </TABLE>
+
+    <HR>
+
+        <P style="margin-left:1cm">
+
+<span style="font-size:60%">(123)</span>
+==> 91	 importing module C:\tas\SST_Repository_YhJC\lib_STEPS_testcases\UNIVERSAL_testcases/R3_0/RB_UNIVERSAL_01J.pm<BR>
+<B><span style="font-size:60%">(000)</span>
+   >>>>  RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R  <<<<<BR></B>
+<B><span style="font-size:60%">(000)</span>
+  started at 30.04.2025 20:53:06 <BR></B>
+<span style="font-size:60%">(000)</span>
+==> (91/100) RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R Set parameters <BR>
+<span style="font-size:60%">(000)</span>
+SYS_STATE change: SYS_READY -> TC_PARA_INIT<BR>
+    </P>
+    <B><I><span style="font-family:Arial"><P><A NAME="TC_set_parameters">TC_set_parameters</A></P></span></I></B>
+    <P style="margin-left:1cm">
+<span style="font-size:60%">(000)</span>
+==> Call TC_set_parameters<BR>
+<B><span style="font-size:60%">(000)</span>
+<BR>Testcondition Parameter : <BR></B>
+<B><span style="font-size:60%">(000)</span>
+<span style="color:gray">S_docu_testcondition_parameter: NO Testcondition parameter for the current Test: RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R <BR></span>
+</B>
+<B><span style="font-size:60%">(000)</span>
+<BR>Testcase Parameter : <BR></B>
+<span style="font-size:60%">(000)</span>
+<pre>	[RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R]<BR>	test_sequence                                     = @(  'trace_start' , 'wait_1000' , 'ecu_on' , 'set_model_values' , 'set_model_values' , 'read_CAN_signals' , 'wait_3000' , 'set_model_values' , 'wait_5000' , 'read_CAN_signals' , 'wait_3000' , 'set_model_values' , 'wait_3000' , 'set_model_values' , 'wait_3000' , 'set_model_values' , 'wait_5000' , 'read_CAN_signals' , 'wait_3000' , 'set_model_values' , 'wait_3000' , 'undo_set_model_values' , 'ecu_off' , 'trace_stop'  )<BR>	set_model_value_to_constant                       = %(  'Selector' => '6' , 'model_gear' => 'gear_D'  )<BR>	set_model_value_to_constant_2                     = %(  'model_Mode_Accelerator' => '2' , 'model_Mode_Brake' => '2'  )<BR>	set_model_value_to_constant_3                     = %(  'model_target_speed' => '30'  )<BR>	set_model_value_to_constant_4                     = %(  'model_target_speed' => '0'  )<BR>	set_model_value_to_constant_5                     = %(  'Selector' => '-1' , 'model_gear' => 'gear_R'  )<BR>	set_model_value_to_constant_6                     = %(  'model_target_speed' => '-30'  )<BR>	set_model_value_to_constant_7                     = %(  'model_target_speed' => '0'  )<BR>	CAN_signals_expected                              = @(  'DirectionUndefined' , '30kph_Forward' , '30kph_Backward'  )<BR>	RB_mandatory_faults                               = @(  'NoFault'  )<BR>	CU_mandatory_faults                               = @(  'NoFault'  )<BR></pre><P style="margin-left:1cm">
+<B><span style="font-size:60%">(000)</span>
+ --> JC_Universal_Version :  3.3.6  <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Req_ID_RB' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return test_sequence = LIST: ( trace_start , wait_1000 , ecu_on , set_model_values , set_model_values , read_CAN_signals , wait_3000 , set_model_values , wait_5000 , read_CAN_signals , wait_3000 , set_model_values , wait_3000 , set_model_values , wait_3000 , set_model_values , wait_5000 , read_CAN_signals , wait_3000 , set_model_values , wait_3000 , undo_set_model_values , ecu_off , trace_stop ,) <BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Mandatory parameter 'test_sequence' set  <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'not_delete_FPC' doesnt exists<BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'not_delete_FPC' is not set <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Measure_Point' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'line_information' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'interrupt_lines' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'short_lines' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'inline_resistor' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'EEPROM_write_data' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'stimuli_file_name' doesnt exists<BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'stimuli_file_name' is not set <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'xflash_file_name' doesnt exists<BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'xflash_file_name' is not set <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'EasyFlash_file_name' doesnt exists<BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'EasyFlash_file_name' is not set <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'dcm_file_name' doesnt exists<BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'dcm_file_name' is not set <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'test_mode' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'edit_CAN_signal' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return RB_mandatory_faults = LIST: ( NoFault ,) <BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'RB_mandatory_faults' set <BR></B>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return CU_mandatory_faults = LIST: ( NoFault ,) <BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'CU_mandatory_faults' set<BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_optional_faults' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_optional_faults' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_disjunction_faults' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_disjunction_faults' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_mandatory_faults_2' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_mandatory_faults_2' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_optional_faults_2' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_optional_faults_2' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_disjunction_faults_2' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_disjunction_faults_2' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_mandatory_faults_3' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_mandatory_faults_3' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_optional_faults_3' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_optional_faults_3' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_disjunction_faults_3' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_disjunction_faults_3' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_mandatory_faults_4' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_mandatory_faults_4' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_optional_faults_4' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_optional_faults_4' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'RB_disjunction_faults_4' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CU_disjunction_faults_4' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'OBD_confirmed_faults' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'OBD_pending_faults' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'OBD_permanent_faults' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'init_diag_sequences' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'final_diag_sequences' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'lamps_expected' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'vr_expected' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'vra_expected' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Diag_Request' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Diag_Request_Continuous' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Exp_Response' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'diag_sequences' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'initialize_model_values' doesnt exists<BR>
+<B><span style="font-size:60%">(000)</span>
+ >>>>> Optional parameter 'set_model_value_to_constant' used 7 times<BR></B>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return set_model_value_to_constant = HASH: ( Selector => 6 , model_gear => gear_D ,) <BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return set_model_value_to_constant_2 = HASH: ( model_Mode_Accelerator => 2 , model_Mode_Brake => 2 ,) <BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return set_model_value_to_constant_3 = HASH: ( model_target_speed => 30 ,) <BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return set_model_value_to_constant_4 = HASH: ( model_target_speed => 0 ,) <BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return set_model_value_to_constant_5 = HASH: ( Selector => -1 , model_gear => gear_R ,) <BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return set_model_value_to_constant_6 = HASH: ( model_target_speed => -30 ,) <BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return set_model_value_to_constant_7 = HASH: ( model_target_speed => 0 ,) <BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'set_model_value_to_constant' used <BR></B>
+<B><span style="font-size:60%">(000)</span>
+ --> Default trigger UZ3 used <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CAN_lamps_expected' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Check_CAN_signals1' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Check_CAN_signals2' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Text_for_user' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'cfg_file_4_MM6' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Measurement_Info' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+  S_read_testcase_parameter: return CAN_signals_expected = LIST: ( DirectionUndefined , 30kph_Forward , 30kph_Backward ,) <BR>
+<B><span style="font-size:60%">(000)</span>
+ --> Optional parameter 'CAN_signals_expected' used <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'ECU_signals_expected' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'Signal_Generator_Mode' doesnt exists<BR>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CANLog_replay' doesnt exists<BR>
+<B><span style="font-size:60%">(000)</span>
+ ------------->  is set  <BR></B>
+<span style="font-size:60%">(000)</span>
+ S_read_testcase_parameter : 'CANLog_replay_delayTime' doesnt exists<BR>
+<B><span style="font-size:60%">(000)</span>
+Start of Plausiblity check section<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - trace_start <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_1000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - ecu_on <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - set_model_values <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - set_model_values <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - read_CAN_signals <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_3000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - set_model_values <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_5000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - read_CAN_signals <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_3000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - set_model_values <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_3000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - set_model_values <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_3000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - set_model_values <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_5000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - read_CAN_signals <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_3000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - set_model_values <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - wait_3000<BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - undo_set_model_values <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - ecu_off <BR></B>
+<B><span style="font-size:60%">(000)</span>
+Plausiblity check - trace_stop <BR></B>
+<B><span style="font-size:60%">(000)</span>
+<BR>Plausiblity check finished - check --> OK...<BR></B>
+    </P>
+    [<A HREF="#TOP">TOP</A>]<P><HR></P>
+    <P style="margin-left:1cm">
+<span style="font-size:60%">(000)</span>
+ S_update_alive_file: update modification time of C:\temp\STEPS_RUN_AUTOMATIC.txt<BR>
+<span style="font-size:60%">(000)</span>
+==> (91/100) RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R Initialization<BR>
+<span style="font-size:60%">(000)</span>
+SYS_STATE change: TC_PARA_INIT -> TC_INIT<BR>
+    </P>
+    <B><I><span style="font-family:Arial"><P><A NAME="TC_initialization">TC_initialization</A></P></span></I></B>
+    <P style="margin-left:1cm">
+<B><span style="font-size:60%">(000)</span>
+<BR>--> Release brake pedal  <BR></B>
+<span style="font-size:60%">(000)</span>
+ LC_set_brake : set model brake to 0 % <BR>
+<span style="font-size:60%">(000)</span>
+ S_wait_ms : 1000 ms<BR>
+<B><span style="font-size:60%">(001)</span>
+ --> Dummy reading CAN signals(for read_CAN_signals) to avoid 3000msec delay.<BR></B>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_RR_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_RL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_RL_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_FL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_FR_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_RR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_FL_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_FR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_RR_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_RL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_RL_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_FL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_FR_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_RR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_FL_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_FR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_RR_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_RL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_RL_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_FL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_FR_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_RR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_FL_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(001)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(001)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_can_signal : VSA_ABS_FR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(001)</span>
+ VEC_trace_configure : OnlineConfiguration already loaded <BR>
+<span style="font-size:60%">(001)</span>
+ CA_trace_configure : device CANalyzer trace configured <BR>
+<span style="font-size:60%">(001)</span>
+ CA_write_configure : device LabCar write configured <BR>
+<span style="font-size:60%">(001)</span>
+ CA_read_configure : device LabCar read configured <BR>
+<B><span style="font-size:60%">(001)</span>
+ --> Read RB and Customer fault memory except for test_mode=DIAG<BR></B>
+<span style="font-size:60%">(001)</span>
+ LC_set_label :  BattOn -> 1 <BR>
+<span style="font-size:60%">(001)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(001)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(001)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(001)</span>
+ LC_set_label :  Ubatt -> 13.8 <BR>
+<span style="font-size:60%">(001)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(002)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(002)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(002)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(002)</span>
+ Switching on ECU.<BR>
+<span style="font-size:60%">(002)</span>
+ LC_set_UZ : Ignition ON <BR>
+<span style="font-size:60%">(002)</span>
+ LC_set_label :  UZ1_switch -> 1 <BR>
+<span style="font-size:60%">(002)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(002)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(002)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(002)</span>
+ S_wait_ms : TIMER_ECU_READY (4000) ms<BR>
+<span style="font-size:60%">(006)</span>
+ S_wait_ms : TIMER_DIAGNOSIS (2500) ms<BR>
+<span style="font-size:60%">(009)</span>
+ DIAG_start_comm: starting CU diagnosis communication (TKWinX) ...<BR>
+<span style="font-size:60%">(009)</span>
+ DIAG_start_comm: diagnosis mode is CU<BR>
+<span style="font-size:60%">(009)</span>
+ TKWinX_configure_CU_mode : tkwinx -> Tool_HL_Configure ( C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj , 1 ) <BR>
+<span style="font-size:60%">(009)</span>
+ S_adapt_UNC_path : before : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(009)</span>
+ S_adapt_UNC_path : after : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(011)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(011)</span>
+ TKWinX_start_comm_CU: Starting diagnosis communication with device '' and config '' ...<BR>
+<span style="font-size:60%">(011)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(011)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(011)</span>
+ TKWinX_start_comm_CU: No service defined for start of diagnostic session<BR>
+<span style="font-size:60%">(011)</span>
+ DIAG_get_activity_status : 'CU_activity_status' is 0<BR>
+<span style="font-size:60%">(011)</span>
+ DIAG_set_activity_status : set 'CU_activity_status' = 1 <BR>
+<span style="font-size:60%">(011)</span>
+ DIAG_get_CUST_FPC: DIAGNOSIS->DTC_number_in_byte not defined in project defaults: number of DTCs will be counted.<BR>
+<span style="font-size:60%">(011)</span>
+ DIAG_send_request: sending request 19 02 8A to diagnosis device...<BR>
+<span style="font-size:60%">(011)</span>
+ TKWinX_send_request: sending request 19 02 8A to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(011)</span>
+ TKWinX_send_request: sending request 19 02 8A to TKWinX...<BR>
+<span style="font-size:60%">(012)</span>
+ TKWinX_send_request: received response '59 02 8A'<BR>
+<span style="font-size:60%">(012)</span>
+ DIAG_check_response : Positive response (59 02 8A)<BR>
+<span style="font-size:60%">(012)</span>
+ DIAG_get_CUST_FPC: number of customer faults: 0<BR>
+<span style="font-size:60%">(012)</span>
+ DIAG_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(012)</span>
+ DIAG_stop_comm: diagnosis mode is CU<BR>
+<span style="font-size:60%">(012)</span>
+ TKWinX_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(012)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(012)</span>
+ TKWinX_stop_comm : Couldn't stop communication with ECU<BR>
+<span style="font-size:60%">(012)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(012)</span>
+ TKWinX_stop_comm : Communication is off<BR>
+<span style="font-size:60%">(012)</span>
+ DIAG_get_activity_status : 'CU_activity_status' is 1<BR>
+<span style="font-size:60%">(012)</span>
+ DIAG_set_activity_status : set 'CU_activity_status' = 0 <BR>
+<span style="font-size:60%">(012)</span>
+ DIAG_start_comm: starting RB diagnosis communication (TKWinX) ...<BR>
+<span style="font-size:60%">(012)</span>
+ DIAG_start_comm: diagnosis mode is RB<BR>
+<span style="font-size:60%">(012)</span>
+ S_adapt_UNC_path : before : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(012)</span>
+ S_adapt_UNC_path : after : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(012)</span>
+ TKWinX_configure_RB_mode : tkwinx -> Tool_HL_Configure ( C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj , 1 ) <BR>
+<span style="font-size:60%">(013)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_start_comm_RB : Starting RB Diagnosis .. <BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_start_comm_RB : calling tkwinx-> TSIInit_HL() ... <BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 2F 80 1E 01 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 2F 80 1E 01 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '6F'<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_start_comm_RB : Speed check deactivated <BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_start_comm_RB: RB TSI Start Communication succeeded.<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_get_activity_status : 'RB_activity_status' is 0<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_set_activity_status : set 'RB_activity_status' = 1 <BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 27 01 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 27 01 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 27 01 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 27 00 00 01 93'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 27 00 00 01 93)<BR>
+<span style="font-size:60%">(014)</span>
+DIAG_get_ICC_Gen9_3: current ignition cycle counter 01F0 (496 dec) <BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 00 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 00 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 00 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [0] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 01 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 01 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 01 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [1] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 02 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 02 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 02 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [2] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 03 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 03 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 03 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [3] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 04 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 04 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 04 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [4] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 05 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 05 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 05 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [5] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 06 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 06 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 06 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [6] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 07 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 07 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 07 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [7] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 08 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 08 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 08 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [8] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_send_request: sending request 31 01 F0 12 09 to diagnosis device...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 09 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 09 to TKWinX...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(014)</span>
+<span style="color:grey"> FW [9] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(014)</span>
+ DIAG_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_stop_comm: diagnosis mode is RB<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_stop_comm : Couldn't stop communication with ECU<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(014)</span>
+ TKWinX_stop_comm : Communication is off<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_get_activity_status : 'RB_activity_status' is 1<BR>
+<span style="font-size:60%">(014)</span>
+ DIAG_set_activity_status : set 'RB_activity_status' = 0 <BR>
+<span style="font-size:60%">(014)</span>
+ S_wait_ms : TIMER_DIAGNOSIS (2500) ms<BR>
+<span style="font-size:60%">(017)</span>
+ Switching off ECU.<BR>
+<span style="font-size:60%">(017)</span>
+ LC_set_UZ : Ignition OFF <BR>
+<span style="font-size:60%">(017)</span>
+ LC_set_label :  UZ1_switch -> 0 <BR>
+<span style="font-size:60%">(017)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(017)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(017)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(017)</span>
+ S_wait_ms : TIMER_ECU_OFF (4000) ms<BR>
+<span style="font-size:60%">(021)</span>
+ LC_set_label :  BattOn -> 0 <BR>
+<span style="font-size:60%">(021)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(021)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 0 <BR>
+<span style="font-size:60%">(021)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 0 <BR>
+<span style="font-size:60%">(021)</span>
+ LC_set_label :  Ubatt -> 0 <BR>
+<span style="font-size:60%">(021)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(021)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 0 <BR>
+<span style="font-size:60%">(021)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 0 <BR>
+<span style="font-size:60%">(021)</span>
+ S_wait_ms : 500 ms<BR>
+<B><span style="font-size:60%">(022)</span>
+ --> Delete RB and Customer fault memory except for test_mode=DIAG<BR></B>
+<span style="font-size:60%">(022)</span>
+ EXT_clear_all_FCM: switch ECU ON with Ubatt = U_BATT_DEFAULT <BR>
+<span style="font-size:60%">(022)</span>
+ Autoload Function -->'LC_set_Ubatt'<BR>
+<span style="font-size:60%">(022)</span>
+ LC_set_label :  BattOn -> 1 <BR>
+<span style="font-size:60%">(022)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(022)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(022)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(022)</span>
+ LC_set_label :  Ubatt -> 13.8 <BR>
+<span style="font-size:60%">(022)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(022)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(022)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(022)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(023)</span>
+ Autoload Function -->'LC_ECU_ON'<BR>
+<span style="font-size:60%">(023)</span>
+ Switching on ECU.<BR>
+<span style="font-size:60%">(023)</span>
+ LC_set_UZ : Ignition ON <BR>
+<span style="font-size:60%">(023)</span>
+ LC_set_label :  UZ1_switch -> 1 <BR>
+<span style="font-size:60%">(023)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(023)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(023)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(023)</span>
+ S_wait_ms : TIMER_ECU_READY (4000) ms<BR>
+<span style="font-size:60%">(027)</span>
+ EXT_clear_all_FCM: Delete RB fault memory and switch ECU OFF during diag<BR>
+<span style="font-size:60%">(027)</span>
+ DIAG_start_comm: starting RB diagnosis communication (TKWinX) ...<BR>
+<span style="font-size:60%">(027)</span>
+ DIAG_start_comm: diagnosis mode is RB<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_configure_RB_mode : last mode was 'RB'<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_start_comm_RB : Starting RB Diagnosis .. <BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_start_comm_RB : calling tkwinx-> TSIInit_HL() ... <BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_send_request: sending request 2F 80 1E 01 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_send_request: sending request 2F 80 1E 01 to TKWinX...<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_send_request: received response '6F'<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_start_comm_RB : Speed check deactivated <BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_start_comm_RB: RB TSI Start Communication succeeded.<BR>
+<span style="font-size:60%">(027)</span>
+ DIAG_get_activity_status : 'RB_activity_status' is 0<BR>
+<span style="font-size:60%">(027)</span>
+ DIAG_set_activity_status : set 'RB_activity_status' = 1 <BR>
+<span style="font-size:60%">(027)</span>
+ DIAG_del_RB_FCM_Gen9_3: Deleting RB fault memory...<BR>
+<span style="font-size:60%">(027)</span>
+ DIAG_send_request: sending request 31 01 F0 0E 04 to diagnosis device...<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_send_request: sending request 31 01 F0 0E 04 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(027)</span>
+ TKWinX_send_request: sending request 31 01 F0 0E 04 to TKWinX...<BR>
+<span style="font-size:60%">(028)</span>
+ TKWinX_send_request: received response '71 01 F0 0E'<BR>
+<span style="font-size:60%">(028)</span>
+ DIAG_check_response : Positive response (71 01 F0 0E)<BR>
+<span style="font-size:60%">(028)</span>
+ DIAG_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(028)</span>
+ DIAG_stop_comm: diagnosis mode is RB<BR>
+<span style="font-size:60%">(028)</span>
+ TKWinX_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(028)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(028)</span>
+ TKWinX_stop_comm : Couldn't stop communication with ECU<BR>
+<span style="font-size:60%">(028)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(028)</span>
+ TKWinX_stop_comm : Communication is off<BR>
+<span style="font-size:60%">(028)</span>
+ DIAG_get_activity_status : 'RB_activity_status' is 1<BR>
+<span style="font-size:60%">(028)</span>
+ DIAG_set_activity_status : set 'RB_activity_status' = 0 <BR>
+<span style="font-size:60%">(028)</span>
+ EXT_clear_all_FCM: Delete Customer fault memory <BR>
+<span style="font-size:60%">(028)</span>
+ DIAG_start_comm: starting CU diagnosis communication (TKWinX) ...<BR>
+<span style="font-size:60%">(028)</span>
+ DIAG_start_comm: diagnosis mode is CU<BR>
+<span style="font-size:60%">(028)</span>
+ TKWinX_configure_CU_mode : tkwinx -> Tool_HL_Configure ( C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj , 1 ) <BR>
+<span style="font-size:60%">(028)</span>
+ S_adapt_UNC_path : before : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(028)</span>
+ S_adapt_UNC_path : after : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(030)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(030)</span>
+ TKWinX_start_comm_CU: Starting diagnosis communication with device '' and config '' ...<BR>
+<span style="font-size:60%">(030)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(030)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(030)</span>
+ TKWinX_start_comm_CU: No service defined for start of diagnostic session<BR>
+<span style="font-size:60%">(030)</span>
+ DIAG_get_activity_status : 'CU_activity_status' is 0<BR>
+<span style="font-size:60%">(030)</span>
+ DIAG_set_activity_status : set 'CU_activity_status' = 1 <BR>
+<span style="font-size:60%">(030)</span>
+ DIAG_del_CUST_FPC : deleting customer fault memory...<BR>
+<span style="font-size:60%">(030)</span>
+ DIAG_send_request: sending request 14 FF FF FF to diagnosis device...<BR>
+<span style="font-size:60%">(030)</span>
+ TKWinX_send_request: sending request 14 FF FF FF to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(030)</span>
+ TKWinX_send_request: sending request 14 FF FF FF to TKWinX...<BR>
+<span style="font-size:60%">(031)</span>
+ TKWinX_send_request: received response '54'<BR>
+<span style="font-size:60%">(031)</span>
+ DIAG_check_response : Positive response (54)<BR>
+<span style="font-size:60%">(031)</span>
+ DIAG_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(031)</span>
+ DIAG_stop_comm: diagnosis mode is CU<BR>
+<span style="font-size:60%">(031)</span>
+ TKWinX_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(031)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(031)</span>
+ TKWinX_stop_comm : Couldn't stop communication with ECU<BR>
+<span style="font-size:60%">(031)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(031)</span>
+ TKWinX_stop_comm : Communication is off<BR>
+<span style="font-size:60%">(031)</span>
+ DIAG_get_activity_status : 'CU_activity_status' is 1<BR>
+<span style="font-size:60%">(031)</span>
+ DIAG_set_activity_status : set 'CU_activity_status' = 0 <BR>
+<span style="font-size:60%">(031)</span>
+ S_wait_ms : TIMER_DIAGNOSIS (2500) ms<BR>
+<span style="font-size:60%">(034)</span>
+ Autoload Function -->'LC_ECU_OFF'<BR>
+<span style="font-size:60%">(034)</span>
+ Switching off ECU.<BR>
+<span style="font-size:60%">(034)</span>
+ LC_set_UZ : Ignition OFF <BR>
+<span style="font-size:60%">(034)</span>
+ LC_set_label :  UZ1_switch -> 0 <BR>
+<span style="font-size:60%">(034)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(034)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(034)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(034)</span>
+ S_wait_ms : TIMER_ECU_OFF (4000) ms<BR>
+<span style="font-size:60%">(038)</span>
+ Autoload Function -->'LC_set_Ubatt'<BR>
+<span style="font-size:60%">(038)</span>
+ LC_set_label :  BattOn -> 0 <BR>
+<span style="font-size:60%">(038)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(038)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 0 <BR>
+<span style="font-size:60%">(038)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 0 <BR>
+<span style="font-size:60%">(038)</span>
+ LC_set_label :  Ubatt -> 0 <BR>
+<span style="font-size:60%">(038)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(038)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 0 <BR>
+<span style="font-size:60%">(038)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 0 <BR>
+<span style="font-size:60%">(038)</span>
+ S_wait_ms : 500 ms<BR>
+<B><span style="font-size:60%">(039)</span>
+<BR> --> Set Ubatt - U_BATT_DEFAULT Volt <BR></B>
+<span style="font-size:60%">(039)</span>
+ LC_set_label :  BattOn -> 1 <BR>
+<span style="font-size:60%">(039)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(039)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(039)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(039)</span>
+ LC_set_label :  Ubatt -> 13.8 <BR>
+<span style="font-size:60%">(039)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(039)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(039)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(039)</span>
+ S_wait_ms : 500 ms<BR>
+<B><span style="font-size:60%">(040)</span>
+ Project_Default file copied to C:/USER/GRX2KOR/Acceptance_Variant/Steps_AT_Variant_Test/logs/Variant_PS_02_CVT_TXAX_20250430_174401 successfully<BR></B>
+<B><span style="font-size:60%">(040)</span>
+<BR> --> Wait for TIMER_TEST_SEQUENCE_READY<BR></B>
+<span style="font-size:60%">(040)</span>
+ S_wait_ms : 0 ms<BR>
+    </P>
+    [<A HREF="#TOP">TOP</A>]<P><HR></P>
+    <P style="margin-left:1cm">
+<span style="font-size:60%">(040)</span>
+ S_update_alive_file: update modification time of C:\temp\STEPS_RUN_AUTOMATIC.txt<BR>
+<span style="font-size:60%">(040)</span>
+==> (91/100) RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R Execution<BR>
+<span style="font-size:60%">(040)</span>
+SYS_STATE change: TC_INIT -> TC_STIMU<BR>
+    </P>
+    <B><I><span style="font-family:Arial"><P><A NAME="TC_stimulation_and_measurement">TC_stimulation_and_measurement</A></P></span></I></B>
+    <P style="margin-left:1cm">
+<B><span style="font-size:60%">(040)</span>
+ --> TEST SEQUENCE Starts here <BR></B>
+<B><span style="font-size:60%">(040)</span>
+<BR><BR> --> Test Sequence : 1 . trace_start</B>
+<B><span style="font-size:60%">(040)</span>
+<BR> --> Test sequence trace_start is supported<BR></B>
+<B><span style="font-size:60%">(040)</span>
+ --> Start CAN trace<BR></B>
+<span style="font-size:60%">(040)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(040)</span>
+VEC_check_running : 'CANalyzer' on localhost is NOT running <BR>
+<span style="font-size:60%">(040)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(040)</span>
+VEC_check_running : 'CANalyzer' on localhost is NOT running <BR>
+<span style="font-size:60%">(040)</span>
+ VEC_start_measurement : start CANalyzer Measurement on localhost<BR>
+<span style="font-size:60%">(040)</span>
+ VEC_start_measurement : OLE_handle -> Measurement -> Start() .. <BR>
+<span style="font-size:60%">(040)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(040)</span>
+VEC_check_running : 'CANalyzer' on localhost is NOT running <BR>
+<span style="font-size:60%">(040)</span>
+ S_wait_ms : 200 ms<BR>
+<span style="font-size:60%">(040)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(040)</span>
+VEC_check_running : 'CANalyzer' on 'localhost' is running <BR>
+<span style="font-size:60%">(040)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 0.211637 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(040)</span>
+<BR><BR> --> Test Sequence : 2 . wait_1000</B>
+<B><span style="font-size:60%">(040)</span>
+<BR> --> Test sequence wait_1000 is supported<BR></B>
+<B><span style="font-size:60%">(040)</span>
+ --> wait for 1000 msec.<BR></B>
+<span style="font-size:60%">(040)</span>
+ S_wait_ms : 1000 ms<BR>
+<span style="font-size:60%">(041)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 1.214283 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(041)</span>
+<BR><BR> --> Test Sequence : 3 . ecu_on</B>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Test sequence ecu_on is supported<BR></B>
+<B><span style="font-size:60%">(041)</span>
+ --> Ignition ON <BR></B>
+<span style="font-size:60%">(041)</span>
+ LC_set_UZ : Ignition ON <BR>
+<span style="font-size:60%">(041)</span>
+ LC_set_label :  UZ1_switch -> 1 <BR>
+<span style="font-size:60%">(041)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(041)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(041)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(041)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 1.234649 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(041)</span>
+<BR><BR> --> Test Sequence : 4 . set_model_values</B>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Test sequence set_model_values is supported<BR></B>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Set Selector to 6<BR></B>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: Setting 'Selector' -> '6' <BR>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : Selector <BR>
+<span style="font-size:60%">(041)</span>
+ LC_prepare_static_manipulation: SignalLabel: Selector Value: 6 (mode: Constant) <BR>
+<span style="font-size:60%">(041)</span>
+ LC_check_stimuli_label : Given label Selector not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(041)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( Selector, Kernel.CI_ComponentInterface.Gear.M2E_Gearbox_Selector , 6 , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(041)</span>
+ LC_check_stimuli_label : Given label Selector not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(041)</span>
+ LC_downloadGenerator : Calling lcco->downloadGenerator( Selector ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(041)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( Selector ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Set model_gear to gear_D<BR></B>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: Setting 'model_gear' -> 'gear_D' <BR>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : model_gear <BR>
+<span style="font-size:60%">(041)</span>
+ LC_prepare_static_manipulation: SignalLabel: model_gear Value: gear_D (mode: Constant) <BR>
+<span style="font-size:60%">(041)</span>
+ LC_check_stimuli_label : Given label model_gear not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(041)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( model_gear, ModelSpecific.VDM.gear.GearType , gear_D , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(041)</span>
+ LC_check_stimuli_label : Given label model_gear not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(041)</span>
+ LC_downloadGenerator : Calling lcco->downloadGenerator( model_gear ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(041)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( model_gear ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<span style="font-size:60%">(041)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 1.310343 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(041)</span>
+<BR><BR> --> Test Sequence : 5 . set_model_values</B>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Test sequence set_model_values is supported<BR></B>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Set model_Mode_Accelerator to 2<BR></B>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: Setting 'model_Mode_Accelerator' -> '2' <BR>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : model_Mode_Accelerator <BR>
+<span style="font-size:60%">(041)</span>
+ LC_prepare_static_manipulation: SignalLabel: model_Mode_Accelerator Value: Model (mode: Constant) <BR>
+<span style="font-size:60%">(041)</span>
+ LC_check_stimuli_label : Given label model_Mode_Accelerator not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(041)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( model_Mode_Accelerator, ModelSpecific.VDM.VehicleParameters.AcceleratorMode , Model , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(041)</span>
+ LC_check_stimuli_label : Given label model_Mode_Accelerator not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(041)</span>
+ LC_downloadGenerator : Calling lcco->downloadGenerator( model_Mode_Accelerator ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(041)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( model_Mode_Accelerator ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Set model_Mode_Brake to 2<BR></B>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: Setting 'model_Mode_Brake' -> '2' <BR>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : model_Mode_Brake <BR>
+<span style="font-size:60%">(041)</span>
+ LC_prepare_static_manipulation: SignalLabel: model_Mode_Brake Value: Model (mode: Constant) <BR>
+<span style="font-size:60%">(041)</span>
+ LC_check_stimuli_label : Given label model_Mode_Brake not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(041)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( model_Mode_Brake, ModelSpecific.VDM.VehicleParameters.BrakeMode , Model , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(041)</span>
+ LC_check_stimuli_label : Given label model_Mode_Brake not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(041)</span>
+ LC_downloadGenerator : Calling lcco->downloadGenerator( model_Mode_Brake ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(041)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( model_Mode_Brake ) ...  <BR>
+<span style="font-size:60%">(041)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<span style="font-size:60%">(041)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 1.371321 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(041)</span>
+<BR><BR> --> Test Sequence : 6 . read_CAN_signals</B>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Test sequence read_CAN_signals is supported<BR></B>
+<B><span style="font-size:60%">(041)</span>
+ --> Read the CAN signals <BR></B>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(041)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(041)</span>
+ CA_read_can_signal : VSA_RR_ROT_DIRECTION = 3 [] <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(041)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(041)</span>
+ CA_read_can_signal : VSA_ABS_RL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(041)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(041)</span>
+ CA_read_can_signal : VSA_RL_ROT_DIRECTION = 3 [] <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(041)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(041)</span>
+ CA_read_can_signal : VSA_ABS_FL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(041)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(041)</span>
+ CA_read_can_signal : VSA_FR_ROT_DIRECTION = 3 [] <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(041)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(041)</span>
+ CA_read_can_signal : VSA_ABS_RR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(041)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(041)</span>
+ CA_read_can_signal : VSA_FL_ROT_DIRECTION = 3 [] <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(041)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(041)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(041)</span>
+ CA_read_can_signal : VSA_ABS_FR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(041)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 1.423122 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(041)</span>
+<BR><BR> --> Test Sequence : 7 . wait_3000</B>
+<B><span style="font-size:60%">(041)</span>
+<BR> --> Test sequence wait_3000 is supported<BR></B>
+<B><span style="font-size:60%">(041)</span>
+ --> wait for 3000 msec.<BR></B>
+<span style="font-size:60%">(041)</span>
+ S_wait_ms : 3000 ms<BR>
+<span style="font-size:60%">(044)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 4.436268 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(044)</span>
+<BR><BR> --> Test Sequence : 8 . set_model_values</B>
+<B><span style="font-size:60%">(044)</span>
+<BR> --> Test sequence set_model_values is supported<BR></B>
+<B><span style="font-size:60%">(044)</span>
+<BR> --> Set model_target_speed to 30<BR></B>
+<span style="font-size:60%">(044)</span>
+ LC_bind_stimuli_to_constant: Setting 'model_target_speed' -> '30' <BR>
+<span style="font-size:60%">(044)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : model_target_speed <BR>
+<span style="font-size:60%">(044)</span>
+ LC_prepare_static_manipulation: SignalLabel: model_target_speed Value: 30 (mode: Constant) <BR>
+<span style="font-size:60%">(044)</span>
+ LC_check_stimuli_label : Given label model_target_speed not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(044)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( model_target_speed, ModelSpecific.VDM.VehicleParameters.v_Manual , 30 , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(044)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(044)</span>
+ LC_check_stimuli_label : Given label model_target_speed not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(044)</span>
+ LC_downloadGenerator : Calling lcco->downloadGenerator( model_target_speed ) ...  <BR>
+<span style="font-size:60%">(044)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(044)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( model_target_speed ) ...  <BR>
+<span style="font-size:60%">(044)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<span style="font-size:60%">(044)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 4.468302 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(044)</span>
+<BR><BR> --> Test Sequence : 9 . wait_5000</B>
+<B><span style="font-size:60%">(044)</span>
+<BR> --> Test sequence wait_5000 is supported<BR></B>
+<B><span style="font-size:60%">(044)</span>
+ --> wait for 5000 msec.<BR></B>
+<span style="font-size:60%">(044)</span>
+ S_wait_ms : 5000 ms<BR>
+<span style="font-size:60%">(049)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 9.480890 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(049)</span>
+<BR><BR> --> Test Sequence : 10 . read_CAN_signals</B>
+<B><span style="font-size:60%">(049)</span>
+<BR> --> Test sequence read_CAN_signals is supported<BR></B>
+<B><span style="font-size:60%">(049)</span>
+ --> Read the CAN signals <BR></B>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(049)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(049)</span>
+ CA_read_can_signal : VSA_RR_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(049)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(049)</span>
+ CA_read_can_signal : VSA_ABS_RL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(049)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(049)</span>
+ CA_read_can_signal : VSA_RL_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(049)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(049)</span>
+ CA_read_can_signal : VSA_ABS_FL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(049)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(049)</span>
+ CA_read_can_signal : VSA_FR_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(049)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(049)</span>
+ CA_read_can_signal : VSA_ABS_RR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(049)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(049)</span>
+ CA_read_can_signal : VSA_FL_ROT_DIRECTION = 1 [] <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(049)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(049)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(049)</span>
+ CA_read_can_signal : VSA_ABS_FR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(049)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 9.539207 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(049)</span>
+<BR><BR> --> Test Sequence : 11 . wait_3000</B>
+<B><span style="font-size:60%">(049)</span>
+<BR> --> Test sequence wait_3000 is supported<BR></B>
+<B><span style="font-size:60%">(049)</span>
+ --> wait for 3000 msec.<BR></B>
+<span style="font-size:60%">(049)</span>
+ S_wait_ms : 3000 ms<BR>
+<span style="font-size:60%">(052)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 12.553322 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(052)</span>
+<BR><BR> --> Test Sequence : 12 . set_model_values</B>
+<B><span style="font-size:60%">(052)</span>
+<BR> --> Test sequence set_model_values is supported<BR></B>
+<B><span style="font-size:60%">(052)</span>
+<BR> --> Set model_target_speed to 0<BR></B>
+<span style="font-size:60%">(052)</span>
+ LC_bind_stimuli_to_constant: Setting 'model_target_speed' -> '0' <BR>
+<span style="font-size:60%">(052)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : model_target_speed <BR>
+<span style="font-size:60%">(052)</span>
+ LC_prepare_static_manipulation: SignalLabel: model_target_speed Value: 0 (mode: Constant) <BR>
+<span style="font-size:60%">(052)</span>
+ LC_check_stimuli_label : Given label model_target_speed not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(052)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( model_target_speed, ModelSpecific.VDM.VehicleParameters.v_Manual , 0 , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(052)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(052)</span>
+ LC_check_stimuli_label : Given label model_target_speed not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(052)</span>
+ LC_downloadGenerator : Download not required as signal group already exist ...  <BR>
+<span style="font-size:60%">(052)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(052)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( model_target_speed ) ...  <BR>
+<span style="font-size:60%">(052)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<span style="font-size:60%">(052)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 12.574799 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(052)</span>
+<BR><BR> --> Test Sequence : 13 . wait_3000</B>
+<B><span style="font-size:60%">(052)</span>
+<BR> --> Test sequence wait_3000 is supported<BR></B>
+<B><span style="font-size:60%">(052)</span>
+ --> wait for 3000 msec.<BR></B>
+<span style="font-size:60%">(052)</span>
+ S_wait_ms : 3000 ms<BR>
+<span style="font-size:60%">(055)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 15.588115 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(055)</span>
+<BR><BR> --> Test Sequence : 14 . set_model_values</B>
+<B><span style="font-size:60%">(055)</span>
+<BR> --> Test sequence set_model_values is supported<BR></B>
+<B><span style="font-size:60%">(055)</span>
+<BR> --> Set Selector to -1<BR></B>
+<span style="font-size:60%">(055)</span>
+ LC_bind_stimuli_to_constant: Setting 'Selector' -> '-1' <BR>
+<span style="font-size:60%">(055)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : Selector <BR>
+<span style="font-size:60%">(055)</span>
+ LC_prepare_static_manipulation: SignalLabel: Selector Value: -1 (mode: Constant) <BR>
+<span style="font-size:60%">(055)</span>
+ LC_check_stimuli_label : Given label Selector not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(055)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( Selector, Kernel.CI_ComponentInterface.Gear.M2E_Gearbox_Selector , -1 , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(055)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(055)</span>
+ LC_check_stimuli_label : Given label Selector not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(055)</span>
+ LC_downloadGenerator : Download not required as signal group already exist ...  <BR>
+<span style="font-size:60%">(055)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(055)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( Selector ) ...  <BR>
+<span style="font-size:60%">(055)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<B><span style="font-size:60%">(055)</span>
+<BR> --> Set model_gear to gear_R<BR></B>
+<span style="font-size:60%">(055)</span>
+ LC_bind_stimuli_to_constant: Setting 'model_gear' -> 'gear_R' <BR>
+<span style="font-size:60%">(055)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : model_gear <BR>
+<span style="font-size:60%">(055)</span>
+ LC_prepare_static_manipulation: SignalLabel: model_gear Value: gear_R (mode: Constant) <BR>
+<span style="font-size:60%">(055)</span>
+ LC_check_stimuli_label : Given label model_gear not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(055)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( model_gear, ModelSpecific.VDM.gear.GearType , gear_R , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(055)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(055)</span>
+ LC_check_stimuli_label : Given label model_gear not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(055)</span>
+ LC_downloadGenerator : Download not required as signal group already exist ...  <BR>
+<span style="font-size:60%">(055)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(055)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( model_gear ) ...  <BR>
+<span style="font-size:60%">(055)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<span style="font-size:60%">(055)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 15.612647 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(055)</span>
+<BR><BR> --> Test Sequence : 15 . wait_3000</B>
+<B><span style="font-size:60%">(055)</span>
+<BR> --> Test sequence wait_3000 is supported<BR></B>
+<B><span style="font-size:60%">(055)</span>
+ --> wait for 3000 msec.<BR></B>
+<span style="font-size:60%">(055)</span>
+ S_wait_ms : 3000 ms<BR>
+<span style="font-size:60%">(058)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 18.614734 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(058)</span>
+<BR><BR> --> Test Sequence : 16 . set_model_values</B>
+<B><span style="font-size:60%">(058)</span>
+<BR> --> Test sequence set_model_values is supported<BR></B>
+<B><span style="font-size:60%">(058)</span>
+<BR> --> Set model_target_speed to -30<BR></B>
+<span style="font-size:60%">(058)</span>
+ LC_bind_stimuli_to_constant: Setting 'model_target_speed' -> '-30' <BR>
+<span style="font-size:60%">(058)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : model_target_speed <BR>
+<span style="font-size:60%">(058)</span>
+ LC_prepare_static_manipulation: SignalLabel: model_target_speed Value: -30 (mode: Constant) <BR>
+<span style="font-size:60%">(058)</span>
+ LC_check_stimuli_label : Given label model_target_speed not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(058)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( model_target_speed, ModelSpecific.VDM.VehicleParameters.v_Manual , -30 , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(058)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(058)</span>
+ LC_check_stimuli_label : Given label model_target_speed not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(058)</span>
+ LC_downloadGenerator : Download not required as signal group already exist ...  <BR>
+<span style="font-size:60%">(058)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(058)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( model_target_speed ) ...  <BR>
+<span style="font-size:60%">(058)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<span style="font-size:60%">(058)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 18.635696 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(058)</span>
+<BR><BR> --> Test Sequence : 17 . wait_5000</B>
+<B><span style="font-size:60%">(058)</span>
+<BR> --> Test sequence wait_5000 is supported<BR></B>
+<B><span style="font-size:60%">(058)</span>
+ --> wait for 5000 msec.<BR></B>
+<span style="font-size:60%">(058)</span>
+ S_wait_ms : 5000 ms<BR>
+<span style="font-size:60%">(063)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 23.641460 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(063)</span>
+<BR><BR> --> Test Sequence : 18 . read_CAN_signals</B>
+<B><span style="font-size:60%">(063)</span>
+<BR> --> Test sequence read_CAN_signals is supported<BR></B>
+<B><span style="font-size:60%">(063)</span>
+ --> Read the CAN signals <BR></B>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_RR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(063)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(063)</span>
+ CA_read_can_signal : VSA_RR_ROT_DIRECTION = 2 [] <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_ABS_RL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(063)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(063)</span>
+ CA_read_can_signal : VSA_ABS_RL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_RL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(063)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_RL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(063)</span>
+ CA_read_can_signal : VSA_RL_ROT_DIRECTION = 2 [] <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_ABS_FL_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(063)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FL_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(063)</span>
+ CA_read_can_signal : VSA_ABS_FL_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_FR_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(063)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FR_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(063)</span>
+ CA_read_can_signal : VSA_FR_ROT_DIRECTION = 2 [] <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_ABS_RR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(063)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_RR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(063)</span>
+ CA_read_can_signal : VSA_ABS_RR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' exists in CAN Mapping <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_FL_ROT_DIRECTION' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(063)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.VSA_20E.R2P_VSA_FL_ROT_DIRECTION_VSA_20E<BR>
+<span style="font-size:60%">(063)</span>
+ CA_read_can_signal : VSA_FL_ROT_DIRECTION = 2 [] <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: Mapping file used : ENGINE CAN Mapping file <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' exists in CAN Mapping <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_read_can_signal: 'VSA_ABS_FR_WHEEL_SPEED' is sent from 'VSA' (node under test)<BR>
+<span style="font-size:60%">(063)</span>
+LC_get_OLE_object_ET : return existing OLE object <BR>
+<span style="font-size:60%">(063)</span>
+ EXT_handle_signal: read signal : ModelSpecific.EID.NET.CAN_Engine.LabCar_Receive.Receive.MessageID_1D0h.R2P_VSA_ABS_FR_WHEEL_SPEED_MessageID_1D0h<BR>
+<span style="font-size:60%">(064)</span>
+ CA_read_can_signal : VSA_ABS_FR_WHEEL_SPEED = 0 [] <BR>
+<span style="font-size:60%">(064)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 23.710774 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(064)</span>
+<BR><BR> --> Test Sequence : 19 . wait_3000</B>
+<B><span style="font-size:60%">(064)</span>
+<BR> --> Test sequence wait_3000 is supported<BR></B>
+<B><span style="font-size:60%">(064)</span>
+ --> wait for 3000 msec.<BR></B>
+<span style="font-size:60%">(064)</span>
+ S_wait_ms : 3000 ms<BR>
+<span style="font-size:60%">(067)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 26.722470 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(067)</span>
+<BR><BR> --> Test Sequence : 20 . set_model_values</B>
+<B><span style="font-size:60%">(067)</span>
+<BR> --> Test sequence set_model_values is supported<BR></B>
+<B><span style="font-size:60%">(067)</span>
+<BR> --> Set model_target_speed to 0<BR></B>
+<span style="font-size:60%">(067)</span>
+ LC_bind_stimuli_to_constant: Setting 'model_target_speed' -> '0' <BR>
+<span style="font-size:60%">(067)</span>
+ LC_bind_stimuli_to_constant: stimuli ID used as STIMUL_SET_LABEL : model_target_speed <BR>
+<span style="font-size:60%">(067)</span>
+ LC_prepare_static_manipulation: SignalLabel: model_target_speed Value: 0 (mode: Constant) <BR>
+<span style="font-size:60%">(067)</span>
+ LC_check_stimuli_label : Given label model_target_speed not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(067)</span>
+ LC_EtAdapter_BindStimuliToConstantMode : Calling lcco->BindStimuliToConstantMode( model_target_speed, ModelSpecific.VDM.VehicleParameters.v_Manual , 0 , Constant , -1 , 0 ) ...  <BR>
+<span style="font-size:60%">(067)</span>
+ LC_download_static_manipulation: ... <BR>
+<span style="font-size:60%">(067)</span>
+ LC_check_stimuli_label : Given label model_target_speed not found in ProjectDefaults->{'LABEL_MAPPING_STIMULI'}!<BR>
+<span style="font-size:60%">(067)</span>
+ LC_downloadGenerator : Download not required as signal group already exist ...  <BR>
+<span style="font-size:60%">(067)</span>
+ LC_activate_static_manipulation: ... <BR>
+<span style="font-size:60%">(067)</span>
+ LC_EtAdapter_startGenerator : Calling lcco->startGenerator( model_target_speed ) ...  <BR>
+<span style="font-size:60%">(067)</span>
+ LC_bind_stimuli_to_constant: ... done <BR>
+<span style="font-size:60%">(067)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 26.745835 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(067)</span>
+<BR><BR> --> Test Sequence : 21 . wait_3000</B>
+<B><span style="font-size:60%">(067)</span>
+<BR> --> Test sequence wait_3000 is supported<BR></B>
+<B><span style="font-size:60%">(067)</span>
+ --> wait for 3000 msec.<BR></B>
+<span style="font-size:60%">(067)</span>
+ S_wait_ms : 3000 ms<BR>
+<span style="font-size:60%">(070)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 29.761794 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(070)</span>
+<BR><BR> --> Test Sequence : 22 . undo_set_model_values</B>
+<B><span style="font-size:60%">(070)</span>
+<BR> --> Test sequence undo_set_model_values is supported<BR></B>
+<span style="font-size:60%">(070)</span>
+ LC_release_stimuli_from_constant : SignalLabel: Selector <BR>
+<span style="font-size:60%">(070)</span>
+ LC_release_stimuli_from_constant : SignalLabel: model_gear <BR>
+<span style="font-size:60%">(070)</span>
+ LC_release_stimuli_from_constant : SignalLabel: model_Mode_Accelerator <BR>
+<span style="font-size:60%">(070)</span>
+ LC_release_stimuli_from_constant : SignalLabel: model_Mode_Brake <BR>
+<span style="font-size:60%">(070)</span>
+ LC_release_stimuli_from_constant : SignalLabel: model_target_speed <BR>
+<span style="font-size:60%">(070)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 30.088968 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(070)</span>
+<BR><BR> --> Test Sequence : 23 . ecu_off</B>
+<B><span style="font-size:60%">(070)</span>
+<BR> --> Test sequence ecu_off is supported<BR></B>
+<B><span style="font-size:60%">(070)</span>
+ --> Ignition OFF <BR></B>
+<span style="font-size:60%">(070)</span>
+ LC_set_UZ : Ignition OFF <BR>
+<span style="font-size:60%">(070)</span>
+ LC_set_label :  UZ1_switch -> 0 <BR>
+<span style="font-size:60%">(070)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(070)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(070)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(070)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 30.099030 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(070)</span>
+<BR><BR> --> Test Sequence : 24 . trace_stop</B>
+<B><span style="font-size:60%">(070)</span>
+<BR> --> Test sequence trace_stop is supported<BR></B>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : 'CANalyzer' on 'localhost' is running <BR>
+<span style="font-size:60%">(070)</span>
+ CA_trace_check_running : CAN trace still running<BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : 'CANalyzer' on 'localhost' is running <BR>
+<span style="font-size:60%">(070)</span>
+ VEC_stop_measurement : Stop CANalyzer Measurement on localhost .. <BR>
+<span style="font-size:60%">(070)</span>
+ VEC_get_application_version: OLE_handle -> Application -> Version -> { 'Major' } .. <BR>
+<span style="font-size:60%">(070)</span>
+ VEC_get_application_version: 'Major' version 16 <BR>
+<span style="font-size:60%">(070)</span>
+ VEC_stop_measurement : OLE_handle -> Measurement -> Stop() .. <BR>
+<span style="font-size:60%">(070)</span>
+done<BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : 'CANalyzer' on 'localhost' is running <BR>
+<span style="font-size:60%">(070)</span>
+ S_wait_ms : 100 ms<BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : 'CANalyzer' on 'localhost' is running <BR>
+<span style="font-size:60%">(070)</span>
+ VEC_stop_measurement : measurement is still running ?!?! <BR>
+<span style="font-size:60%">(070)</span>
+ S_wait_ms : 200 ms<BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(070)</span>
+VEC_check_running : 'CANalyzer' on 'localhost' is running <BR>
+<span style="font-size:60%">(070)</span>
+ VEC_stop_measurement : measurement is still running ?!?! <BR>
+<span style="font-size:60%">(070)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(071)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(071)</span>
+VEC_check_running : 'CANalyzer' on localhost is NOT running <BR>
+<span style="font-size:60%">(071)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(071)</span>
+VEC_check_running : 'CANalyzer' on localhost is NOT running <BR>
+<span style="font-size:60%">(071)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(071)</span>
+VEC_check_running : 'CANalyzer' on localhost is NOT running <BR>
+<span style="font-size:60%">(071)</span>
+ VEC_trace_store : Copy 'C:\temp\STEPS_CAN_TEST.asc' -> C:\temp\STEPS_AddTcDoc_TEMP\STEPS_network_trace_20250430_205417.asc <BR>
+<span style="font-size:60%">(071)</span>
+ S_append_lines_to_file: Adding lines to file : C:\temp\STEPS_AddTcDoc_TEMP\STEPS_network_trace_20250430_205417.asc<BR>
+<span style="font-size:60%">(071)</span>
+ S_append_lines_to_file: Adding lines to file : C:\temp\STEPS_AddTcDoc_TEMP\STEPS_network_trace_20250430_205417.asc<BR>
+<span style="font-size:60%">(071)</span>
+RB_UNIVERSAL_01J_calc_dif_time(OS timer): 30.990741 [sec] from TEST SEQUENCE Starts<BR>
+<B><span style="font-size:60%">(071)</span>
+<BR>--> wait 1000ms  <BR></B>
+<span style="font-size:60%">(071)</span>
+ S_wait_ms : 1000 ms<BR>
+<B><span style="font-size:60%">(072)</span>
+ --> ECU ON with Default Battery Voltage.<BR></B>
+<span style="font-size:60%">(072)</span>
+ LC_set_label :  BattOn -> 1 <BR>
+<span style="font-size:60%">(072)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(072)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(072)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(072)</span>
+ LC_set_label :  Ubatt -> 13.8 <BR>
+<span style="font-size:60%">(072)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(072)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(072)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(072)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(073)</span>
+ Switching on ECU.<BR>
+<span style="font-size:60%">(073)</span>
+ LC_set_UZ : Ignition ON <BR>
+<span style="font-size:60%">(073)</span>
+ LC_set_label :  UZ1_switch -> 1 <BR>
+<span style="font-size:60%">(073)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(073)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(073)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(073)</span>
+ S_wait_ms : TIMER_ECU_READY (4000) ms<BR>
+<B><span style="font-size:60%">(077)</span>
+ --> Read Customer fault memory. <BR></B>
+<span style="font-size:60%">(077)</span>
+ DIAG_start_comm: starting CU diagnosis communication (TKWinX) ...<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_start_comm: diagnosis mode is CU<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_configure_CU_mode : last mode was 'CU'<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_start_comm_CU: Starting diagnosis communication with device '' and config '' ...<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_start_comm_CU: No service defined for start of diagnostic session<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_get_activity_status : 'CU_activity_status' is 0<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_set_activity_status : set 'CU_activity_status' = 1 <BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_get_CUST_FPC: DIAGNOSIS->DTC_number_in_byte not defined in project defaults: number of DTCs will be counted.<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_send_request: sending request 19 02 8A to diagnosis device...<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_send_request: sending request 19 02 8A to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_send_request: sending request 19 02 8A to TKWinX...<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_send_request: received response '59 02 8A'<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_check_response : Positive response (59 02 8A)<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_get_CUST_FPC: number of customer faults: 0<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_stop_comm: diagnosis mode is CU<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_stop_comm : Couldn't stop communication with ECU<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(077)</span>
+ TKWinX_stop_comm : Communication is off<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_get_activity_status : 'CU_activity_status' is 1<BR>
+<span style="font-size:60%">(077)</span>
+ DIAG_set_activity_status : set 'CU_activity_status' = 0 <BR>
+<span style="font-size:60%">(077)</span>
+ S_wait_ms : TIMER_DIAGNOSIS (2500) ms<BR>
+<B><span style="font-size:60%">(080)</span>
+ --> Read RB fault memory. <BR></B>
+<span style="font-size:60%">(080)</span>
+ DIAG_start_comm: starting RB diagnosis communication (TKWinX) ...<BR>
+<span style="font-size:60%">(080)</span>
+ DIAG_start_comm: diagnosis mode is RB<BR>
+<span style="font-size:60%">(080)</span>
+ S_adapt_UNC_path : before : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(080)</span>
+ S_adapt_UNC_path : after : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(080)</span>
+ TKWinX_configure_RB_mode : tkwinx -> Tool_HL_Configure ( C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj , 1 ) <BR>
+<span style="font-size:60%">(082)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_start_comm_RB : Starting RB Diagnosis .. <BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_start_comm_RB : calling tkwinx-> TSIInit_HL() ... <BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_send_request: sending request 2F 80 1E 01 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_send_request: sending request 2F 80 1E 01 to TKWinX...<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_send_request: received response '6F'<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_start_comm_RB : Speed check deactivated <BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_start_comm_RB: RB TSI Start Communication succeeded.<BR>
+<span style="font-size:60%">(082)</span>
+ DIAG_get_activity_status : 'RB_activity_status' is 0<BR>
+<span style="font-size:60%">(082)</span>
+ DIAG_set_activity_status : set 'RB_activity_status' = 1 <BR>
+<span style="font-size:60%">(082)</span>
+ DIAG_send_request: sending request 31 01 F0 27 01 to diagnosis device...<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_send_request: sending request 31 01 F0 27 01 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_send_request: sending request 31 01 F0 27 01 to TKWinX...<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_send_request: received response '71 01 F0 27 00 00 01 95'<BR>
+<span style="font-size:60%">(082)</span>
+ DIAG_check_response : Positive response (71 01 F0 27 00 00 01 95)<BR>
+<span style="font-size:60%">(082)</span>
+DIAG_get_ICC_Gen9_3: current ignition cycle counter 01F0 (496 dec) <BR>
+<span style="font-size:60%">(082)</span>
+ DIAG_send_request: sending request 31 01 F0 12 00 to diagnosis device...<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 00 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(082)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 00 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [0] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 01 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 01 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 01 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [1] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 02 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 02 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 02 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [2] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 03 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 03 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 03 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [3] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 04 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 04 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 04 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [4] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 05 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 05 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 05 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [5] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 06 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 06 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 06 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [6] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 07 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 07 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 07 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [7] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 08 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 08 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 08 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [8] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_send_request: sending request 31 01 F0 12 09 to diagnosis device...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 09 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: sending request 31 01 F0 12 09 to TKWinX...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_send_request: received response '71 01 F0 12'<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_check_response : Positive response (71 01 F0 12)<BR>
+<span style="font-size:60%">(083)</span>
+<span style="color:grey"> FW [9] --> NoFault <-- <BR></span>
+
+<span style="font-size:60%">(083)</span>
+ DIAG_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_stop_comm: diagnosis mode is RB<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_stop_comm : Couldn't stop communication with ECU<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(083)</span>
+ TKWinX_stop_comm : Communication is off<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_get_activity_status : 'RB_activity_status' is 1<BR>
+<span style="font-size:60%">(083)</span>
+ DIAG_set_activity_status : set 'RB_activity_status' = 0 <BR>
+<span style="font-size:60%">(083)</span>
+ S_wait_ms : TIMER_DIAGNOSIS (2500) ms<BR>
+<span style="font-size:60%">(085)</span>
+ Switching off ECU.<BR>
+<span style="font-size:60%">(085)</span>
+ LC_set_UZ : Ignition OFF <BR>
+<span style="font-size:60%">(085)</span>
+ LC_set_label :  UZ1_switch -> 0 <BR>
+<span style="font-size:60%">(085)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(085)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(085)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(085)</span>
+ S_wait_ms : TIMER_ECU_OFF (4000) ms<BR>
+    </P>
+    [<A HREF="#TOP">TOP</A>]<P><HR></P>
+    <P style="margin-left:1cm">
+<span style="font-size:60%">(089)</span>
+ S_update_alive_file: update modification time of C:\temp\STEPS_RUN_AUTOMATIC.txt<BR>
+<span style="font-size:60%">(089)</span>
+==> (91/100) RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R Evaluation<BR>
+<span style="font-size:60%">(089)</span>
+SYS_STATE change: TC_STIMU -> TC_EVAL<BR>
+    </P>
+    <B><I><span style="font-family:Arial"><P><A NAME="TC_evaluation">TC_evaluation</A></P></span></I></B>
+    <P style="margin-left:1cm">
+<B><span style="font-size:60%">(089)</span>
+<BR> --> Evaluate RB faults for reading number 1<BR></B>
+<span style="font-size:60%">(089)</span>
+ DIAG_get_max_number_of_faults : Fault words in FCM : FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF<BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_get_max_number_of_faults : return 10 <BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_evaluate_fault_words_Gen9 : check number of the 'no_fault' FFFFFFFF <BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_check_fault_word : FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF FFFFFFFF<BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_check_fault_word : FFFFFFFF with 10 occurrence(s)<BR><BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_evaluate_fault_words_Gen9 : check mandatory faults<BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_evaluate_fault_words_Gen9 : skipped mandatory fault (= no fault)<BR>
+<span style="font-size:60%">(089)</span>
+ Add project defined optional faults '0'<BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_evaluate_fault_words_Gen9 : check unexpected faults<BR>
+<B><span style="font-size:60%">(089)</span>
+<BR>     FAULT CALCULATION ( RB System Fault )<BR>  ----------------------<BR>    0 mandatory   faults <BR>    0 optional    faults <BR>    0 disjunction faults <BR>    10 FFFFFFFF    NoFault<BR>    0 other       faults <BR>  ----------------------<BR><BR>      => OK -> all expected faults found AND there is no other fault entry<BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"><A NAME="VERDICT_PASS"> Testcase verdict is VERDICT_PASS (new) (previous was VERDICT_NONE)<BR></A></span>
+
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_NONE -> VERDICT_PASS<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+<BR> --> Evaluate CU faults for reading number 1<BR></B>
+<span style="font-size:60%">(089)</span>
+ DIAG_get_max_number_of_faults : Fault words in FCM : FFFFFFFF<BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_get_max_number_of_faults : return 1 <BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_evaluate_fault_words_Gen9 : check number of the 'no_fault' FFFFFFFF <BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_check_fault_word : FFFFFFFF<BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_check_fault_word : FFFFFFFF with 1 occurrence(s)<BR><BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_evaluate_fault_words_Gen9 : check mandatory faults<BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_evaluate_fault_words_Gen9 : skipped mandatory fault (= no fault)<BR>
+<span style="font-size:60%">(089)</span>
+ Add project defined optional faults '0'<BR>
+<span style="font-size:60%">(089)</span>
+ DIAG_evaluate_fault_words_Gen9 : check unexpected faults<BR>
+<B><span style="font-size:60%">(089)</span>
+<BR>     FAULT CALCULATION ( Customer DTC )<BR>  ----------------------<BR>    0 mandatory   faults <BR>    0 optional    faults <BR>    0 disjunction faults <BR>    1 FFFFFFFF    NoFault<BR>    0 other       faults <BR>  ----------------------<BR><BR>      => OK -> all expected faults found AND there is no other fault entry<BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+<BR></B>
+<B><span style="font-size:60%">(089)</span>
+--> evaluate CAN signals (read_CAN_signals) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+ <BR> --> evaluate for reading no. 1<BR></B>
+<B><span style="font-size:60%">(089)</span>
+Evaluating 3 against 3<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_RR_ROT_DIRECTION' :  3 (expected) == 3 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against 0<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_RL_WHEEL_SPEED' :  0 (expected) == 0 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 3 against 3<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_RL_ROT_DIRECTION' :  3 (expected) == 3 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against 0<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_FL_WHEEL_SPEED' :  0 (expected) == 0 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 3 against 3<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_FR_ROT_DIRECTION' :  3 (expected) == 3 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against 0<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_RR_WHEEL_SPEED' :  0 (expected) == 0 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 3 against 3<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_FL_ROT_DIRECTION' :  3 (expected) == 3 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against 0<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_FR_WHEEL_SPEED' :  0 (expected) == 0 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+ <BR> --> evaluate for reading no. 2<BR></B>
+<B><span style="font-size:60%">(089)</span>
+Evaluating 1 against 1<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_RR_ROT_DIRECTION' :  1 (expected) == 1 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against <30<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_RL_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 1 against 1<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_RL_ROT_DIRECTION' :  1 (expected) == 1 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against <30<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_FL_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 1 against 1<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_FR_ROT_DIRECTION' :  1 (expected) == 1 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against <30<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_RR_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 1 against 1<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_FL_ROT_DIRECTION' :  1 (expected) == 1 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against <30<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_FR_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+ <BR> --> evaluate for reading no. 3<BR></B>
+<B><span style="font-size:60%">(089)</span>
+Evaluating 2 against 2<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_RR_ROT_DIRECTION' :  2 (expected) == 2 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against <30<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_RL_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 2 against 2<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_RL_ROT_DIRECTION' :  2 (expected) == 2 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against <30<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_FL_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 2 against 2<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_FR_ROT_DIRECTION' :  2 (expected) == 2 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against <30<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_RR_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 2 against 2<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_FL_ROT_DIRECTION' :  2 (expected) == 2 (detected) <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+<B><span style="font-size:60%">(089)</span>
+Evaluating 0 against <30<BR></B>
+<B><span style="font-size:60%">(089)</span>
+ Signal 'VSA_ABS_FR_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled <BR></B>
+<B><span style="font-size:60%">(089)</span>
+<span style="color:green"> ---> VERDICT_PASS <--- (this evaluation step)<BR></span>
+</B>
+<span style="font-size:60%">(089)</span>
+ Testcase verdict is VERDICT_PASS (previous & current)<BR>
+<span style="font-size:60%">(089)</span>
+<span style="color:green"> VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)<BR></span>
+
+    </P>
+    [<A HREF="#TOP">TOP</A>]<P><HR></P>
+    <P style="margin-left:1cm">
+<span style="font-size:60%">(089)</span>
+ S_update_alive_file: update modification time of C:\temp\STEPS_RUN_AUTOMATIC.txt<BR>
+<span style="font-size:60%">(089)</span>
+==> (91/100) RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R Finalization<BR>
+<span style="font-size:60%">(089)</span>
+SYS_STATE change: TC_EVAL -> TC_FINAL<BR>
+    </P>
+    <B><I><span style="font-family:Arial"><P><A NAME="TC_finalization">TC_finalization</A></P></span></I></B>
+    <P style="margin-left:1cm">
+<span style="font-size:60%">(089)</span>
+ S_read_testcase_parameter : 'stimuli_file_name' doesnt exists<BR>
+<span style="font-size:60%">(089)</span>
+ Switching off ECU.<BR>
+<span style="font-size:60%">(089)</span>
+ LC_set_UZ : Ignition OFF <BR>
+<span style="font-size:60%">(089)</span>
+ LC_set_label :  UZ1_switch -> 0 <BR>
+<span style="font-size:60%">(089)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(089)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(089)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(089)</span>
+ S_wait_ms : TIMER_ECU_OFF (4000) ms<BR>
+<span style="font-size:60%">(093)</span>
+ LC_set_label :  BattOn -> 0 <BR>
+<span style="font-size:60%">(093)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(093)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 0 <BR>
+<span style="font-size:60%">(093)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 0 <BR>
+<span style="font-size:60%">(093)</span>
+ LC_set_label :  Ubatt -> 0 <BR>
+<span style="font-size:60%">(093)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(094)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 0 <BR>
+<span style="font-size:60%">(094)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 0 <BR>
+<span style="font-size:60%">(094)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(094)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(095)</span>
+ LC_set_label :  BattOn -> 1 <BR>
+<span style="font-size:60%">(095)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(095)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(095)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 1 <BR>
+<span style="font-size:60%">(095)</span>
+ LC_set_label :  Ubatt -> 13.8 <BR>
+<span style="font-size:60%">(095)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(095)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(095)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 13.8 <BR>
+<span style="font-size:60%">(095)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(096)</span>
+ Switching on ECU.<BR>
+<span style="font-size:60%">(096)</span>
+ LC_set_UZ : Ignition ON <BR>
+<span style="font-size:60%">(096)</span>
+ LC_set_label :  UZ1_switch -> 1 <BR>
+<span style="font-size:60%">(096)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(096)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(096)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_On <BR>
+<span style="font-size:60%">(096)</span>
+ S_wait_ms : TIMER_ECU_READY (4000) ms<BR>
+<span style="font-size:60%">(100)</span>
+ S_wait_ms : 6000 ms<BR>
+<B><span style="font-size:60%">(106)</span>
+<BR> --> Accelerate and Stop Vehicle <BR></B>
+<span style="font-size:60%">(106)</span>
+ Autoload Function -->'LC_set_mue'<BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_mue : -> 0.9 (homogenous)<BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_label :  model_mue_homogenous -> 0.9 <BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_label (ET/NG7 signal):  model_mue_homogenous -> my_c1.U_My_a.VDYM_a.CS_VDYM <BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_lcpa : my_c1.U_My_a.VDYM_a.CS_VDYM -> 0.9 <BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_signal : my_c1.U_My_a.VDYM_a.CS_VDYM -> 0.9 <BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_label :  model_mue_mode -> 1 <BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_label (ET/NG7 signal):  model_mue_mode -> myKind.U_My_a.VDYM_a.CS_VDYM <BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_lcpa : myKind.U_My_a.VDYM_a.CS_VDYM -> 1 <BR>
+<span style="font-size:60%">(106)</span>
+ LC_set_signal : myKind.U_My_a.VDYM_a.CS_VDYM -> 1 <BR>
+<span style="font-size:60%">(106)</span>
+ Autoload Function -->'LC_read_label'<BR>
+<span style="font-size:60%">(106)</span>
+ LC_read_label : Given label model_chassis_speed mapped to signal ModelSpecific.VDM.VDM2EID.Speed out of Signal mapping<BR>
+<span style="font-size:60%">(106)</span>
+ LC_read_signal( lcme method ): ModelSpecific.VDM.VDM2EID.Speed -> 4.90811566432347E-10 <BR>
+<span style="font-size:60%">(106)</span>
+ LC_read_label : model_chassis_speed -> 0.000 <BR>
+<span style="font-size:60%">(106)</span>
+ EXT_goto_target_speed : move model speed from 0 kmh to 30 kmh <BR>
+<span style="font-size:60%">(109)</span>
+ Autoload Function -->'LC_read_label'<BR>
+<span style="font-size:60%">(109)</span>
+ LC_read_label : Given label model_chassis_speed mapped to signal ModelSpecific.VDM.VDM2EID.Speed out of Signal mapping<BR>
+<span style="font-size:60%">(110)</span>
+ LC_read_signal( lcme method ): ModelSpecific.VDM.VDM2EID.Speed -> 8.42637416174172 <BR>
+<span style="font-size:60%">(110)</span>
+ LC_read_label : model_chassis_speed -> 8.426 <BR>
+<span style="font-size:60%">(110)</span>
+ Autoload Function -->'LC_read_label'<BR>
+<span style="font-size:60%">(110)</span>
+ LC_read_label : Given label model_chassis_speed mapped to signal ModelSpecific.VDM.VDM2EID.Speed out of Signal mapping<BR>
+<span style="font-size:60%">(110)</span>
+ LC_read_signal( lcme method ): ModelSpecific.VDM.VDM2EID.Speed -> 8.42326168013533 <BR>
+<span style="font-size:60%">(110)</span>
+ LC_read_label : model_chassis_speed -> 8.423 <BR>
+<span style="font-size:60%">(110)</span>
+ EXT_goto_target_speed : return with model speed 30.3237420484872 kmh <BR>
+<span style="font-size:60%">(110)</span>
+ Autoload Function -->'LC_set_mue'<BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_mue : -> 0.9 (homogenous)<BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_label :  model_mue_homogenous -> 0.9 <BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_label (ET/NG7 signal):  model_mue_homogenous -> my_c1.U_My_a.VDYM_a.CS_VDYM <BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_lcpa : my_c1.U_My_a.VDYM_a.CS_VDYM -> 0.9 <BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_signal : my_c1.U_My_a.VDYM_a.CS_VDYM -> 0.9 <BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_label :  model_mue_mode -> 1 <BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_label (ET/NG7 signal):  model_mue_mode -> myKind.U_My_a.VDYM_a.CS_VDYM <BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_lcpa : myKind.U_My_a.VDYM_a.CS_VDYM -> 1 <BR>
+<span style="font-size:60%">(110)</span>
+ LC_set_signal : myKind.U_My_a.VDYM_a.CS_VDYM -> 1 <BR>
+<span style="font-size:60%">(110)</span>
+ Autoload Function -->'LC_read_label'<BR>
+<span style="font-size:60%">(110)</span>
+ LC_read_label : Given label model_chassis_speed mapped to signal ModelSpecific.VDM.VDM2EID.Speed out of Signal mapping<BR>
+<span style="font-size:60%">(110)</span>
+ LC_read_signal( lcme method ): ModelSpecific.VDM.VDM2EID.Speed -> 8.41726263471128 <BR>
+<span style="font-size:60%">(110)</span>
+ LC_read_label : model_chassis_speed -> 8.417 <BR>
+<span style="font-size:60%">(110)</span>
+ EXT_goto_target_speed : move model speed from 30.3 kmh to 0 kmh <BR>
+<span style="font-size:60%">(113)</span>
+ Autoload Function -->'LC_read_label'<BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_label : Given label model_chassis_speed mapped to signal ModelSpecific.VDM.VDM2EID.Speed out of Signal mapping<BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_signal( lcme method ): ModelSpecific.VDM.VDM2EID.Speed -> -4.92000174389992E-06 <BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_label : model_chassis_speed -> -0.000 <BR>
+<span style="font-size:60%">(113)</span>
+ Autoload Function -->'LC_set_gear'<BR>
+<span style="font-size:60%">(113)</span>
+ LC_set_gear : set model gear to gear_N <BR>
+<span style="font-size:60%">(113)</span>
+ LC_set_gear : gear_N is mapped to Enum value 1 <BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_label : Given label model_gear mapped to signal ModelSpecific.VDM.gear.GearType out of Signal mapping<BR>
+<span style="font-size:60%">(113)</span>
+ read_lcme : Try to read ET signal result = gear_D<BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_signal( lcpa method ): ModelSpecific.VDM.gear.GearType -> gear_D <BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_label : model_gear -> gear_D <BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_label : Given label model_lever mapped to signal ModelSpecific.VDM.gear.GearLever out of Signal mapping<BR>
+<span style="font-size:60%">(113)</span>
+ read_lcme : Try to read ET signal result = 0<BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_signal( lcpa method ): ModelSpecific.VDM.gear.GearLever -> 0 <BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_label : model_lever -> 0 <BR>
+<span style="font-size:60%">(113)</span>
+ LC_set_label :  model_gear -> gear_N <BR>
+<span style="font-size:60%">(113)</span>
+ LC_set_label (ET/NG7 signal):  model_gear -> ModelSpecific.VDM.gear.GearType <BR>
+<span style="font-size:60%">(113)</span>
+ LC_set_lcpa : ModelSpecific.VDM.gear.GearType -> gear_N <BR>
+<span style="font-size:60%">(113)</span>
+ LC_set_signal : ModelSpecific.VDM.gear.GearType -> gear_N <BR>
+<span style="font-size:60%">(113)</span>
+ Autoload Function -->'LC_read_label'<BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_label : Given label model_chassis_speed mapped to signal ModelSpecific.VDM.VDM2EID.Speed out of Signal mapping<BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_signal( lcme method ): ModelSpecific.VDM.VDM2EID.Speed -> -0.000331698821534156 <BR>
+<span style="font-size:60%">(113)</span>
+ LC_read_label : model_chassis_speed -> -0.000 <BR>
+<span style="font-size:60%">(113)</span>
+ EXT_goto_target_speed : return with model speed 0.00119411575752296 kmh <BR>
+<B><span style="font-size:60%">(113)</span>
+ --> Delete Customer fault memory<BR></B>
+<span style="font-size:60%">(113)</span>
+ S_wait_ms : 2000 ms<BR>
+<span style="font-size:60%">(115)</span>
+ DIAG_start_comm: starting CU diagnosis communication (TKWinX) ...<BR>
+<span style="font-size:60%">(115)</span>
+ DIAG_start_comm: diagnosis mode is CU<BR>
+<span style="font-size:60%">(115)</span>
+ TKWinX_configure_CU_mode : tkwinx -> Tool_HL_Configure ( C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj , 1 ) <BR>
+<span style="font-size:60%">(115)</span>
+ S_adapt_UNC_path : before : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(115)</span>
+ S_adapt_UNC_path : after : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(117)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(117)</span>
+ TKWinX_start_comm_CU: Starting diagnosis communication with device '' and config '' ...<BR>
+<span style="font-size:60%">(117)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(117)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(117)</span>
+ TKWinX_start_comm_CU: No service defined for start of diagnostic session<BR>
+<span style="font-size:60%">(117)</span>
+ DIAG_get_activity_status : 'CU_activity_status' is 0<BR>
+<span style="font-size:60%">(117)</span>
+ DIAG_set_activity_status : set 'CU_activity_status' = 1 <BR>
+<span style="font-size:60%">(117)</span>
+ DIAG_del_CUST_FPC : deleting customer fault memory...<BR>
+<span style="font-size:60%">(117)</span>
+ DIAG_send_request: sending request 14 FF FF FF to diagnosis device...<BR>
+<span style="font-size:60%">(117)</span>
+ TKWinX_send_request: sending request 14 FF FF FF to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(117)</span>
+ TKWinX_send_request: sending request 14 FF FF FF to TKWinX...<BR>
+<span style="font-size:60%">(118)</span>
+ TKWinX_send_request: received response '54'<BR>
+<span style="font-size:60%">(118)</span>
+ DIAG_check_response : Positive response (54)<BR>
+<span style="font-size:60%">(118)</span>
+ DIAG_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(118)</span>
+ DIAG_stop_comm: diagnosis mode is CU<BR>
+<span style="font-size:60%">(118)</span>
+ TKWinX_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(118)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(118)</span>
+ TKWinX_stop_comm : Couldn't stop communication with ECU<BR>
+<span style="font-size:60%">(118)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(118)</span>
+ TKWinX_stop_comm : Communication is off<BR>
+<span style="font-size:60%">(118)</span>
+ DIAG_get_activity_status : 'CU_activity_status' is 1<BR>
+<span style="font-size:60%">(118)</span>
+ DIAG_set_activity_status : set 'CU_activity_status' = 0 <BR>
+<B><span style="font-size:60%">(118)</span>
+ --> Delete RB fault memory<BR></B>
+<span style="font-size:60%">(118)</span>
+ S_wait_ms : 2000 ms<BR>
+<span style="font-size:60%">(120)</span>
+ DIAG_start_comm: starting RB diagnosis communication (TKWinX) ...<BR>
+<span style="font-size:60%">(120)</span>
+ DIAG_start_comm: diagnosis mode is RB<BR>
+<span style="font-size:60%">(120)</span>
+ S_adapt_UNC_path : before : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(120)</span>
+ S_adapt_UNC_path : after : C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj<BR>
+<span style="font-size:60%">(120)</span>
+ TKWinX_configure_RB_mode : tkwinx -> Tool_HL_Configure ( C:\TK_WinX\projects\HONDA\grx2kor\TXAX\TXAX.prj , 1 ) <BR>
+<span style="font-size:60%">(122)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(122)</span>
+ TKWinX_start_comm_RB : Starting RB Diagnosis .. <BR>
+<span style="font-size:60%">(122)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(122)</span>
+ TKWinX_start_comm_RB : calling tkwinx-> TSIInit_HL() ... <BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_send_request: sending request 2F 80 1E 01 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_send_request: sending request 2F 80 1E 01 to TKWinX...<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_send_request: received response '6F'<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_start_comm_RB : Speed check deactivated <BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_start_comm_RB: RB TSI Start Communication succeeded.<BR>
+<span style="font-size:60%">(123)</span>
+ DIAG_get_activity_status : 'RB_activity_status' is 0<BR>
+<span style="font-size:60%">(123)</span>
+ DIAG_set_activity_status : set 'RB_activity_status' = 1 <BR>
+<span style="font-size:60%">(123)</span>
+ DIAG_del_RB_FCM_Gen9_3: Deleting RB fault memory...<BR>
+<span style="font-size:60%">(123)</span>
+ DIAG_send_request: sending request 31 01 F0 0E 04 to diagnosis device...<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_send_request: sending request 31 01 F0 0E 04 to TKWinX diagnosis...<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_send_request: sending request 31 01 F0 0E 04 to TKWinX...<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_send_request: received response '71 01 F0 0E'<BR>
+<span style="font-size:60%">(123)</span>
+ DIAG_check_response : Positive response (71 01 F0 0E)<BR>
+<span style="font-size:60%">(123)</span>
+ DIAG_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(123)</span>
+ DIAG_stop_comm: diagnosis mode is RB<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_stop_comm: Stopping diagnosis communication...<BR>
+<span style="font-size:60%">(123)</span>
+ TKWinX_get_status: Communication is ON<BR>
+<span style="font-size:60%">(124)</span>
+ TKWinX_stop_comm : Couldn't stop communication with ECU<BR>
+<span style="font-size:60%">(124)</span>
+ TKWinX_get_status: Communication is OFF<BR>
+<span style="font-size:60%">(124)</span>
+ TKWinX_stop_comm : Communication is off<BR>
+<span style="font-size:60%">(124)</span>
+ DIAG_get_activity_status : 'RB_activity_status' is 1<BR>
+<span style="font-size:60%">(124)</span>
+ DIAG_set_activity_status : set 'RB_activity_status' = 0 <BR>
+<span style="font-size:60%">(124)</span>
+ Switching off ECU.<BR>
+<span style="font-size:60%">(124)</span>
+ LC_set_UZ : Ignition OFF <BR>
+<span style="font-size:60%">(124)</span>
+ LC_set_label :  UZ1_switch -> 0 <BR>
+<span style="font-size:60%">(124)</span>
+ LC_set_label (ET/NG7 signal):  UZ1_switch -> ModelSpecific.ECU_Connector.Cockpit.Ignition <BR>
+<span style="font-size:60%">(124)</span>
+ LC_set_lcpa : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(124)</span>
+ LC_set_signal : ModelSpecific.ECU_Connector.Cockpit.Ignition -> SwitchState2_Off <BR>
+<span style="font-size:60%">(124)</span>
+ S_wait_ms : TIMER_ECU_OFF (4000) ms<BR>
+<span style="font-size:60%">(128)</span>
+ LC_set_label :  BattOn -> 0 <BR>
+<span style="font-size:60%">(128)</span>
+ LC_set_label (ET/NG7 signal):  BattOn -> Kernel.BatteryControl.BatteryOn <BR>
+<span style="font-size:60%">(128)</span>
+ LC_set_lcpa : Kernel.BatteryControl.BatteryOn -> 0 <BR>
+<span style="font-size:60%">(128)</span>
+ LC_set_signal : Kernel.BatteryControl.BatteryOn -> 0 <BR>
+<span style="font-size:60%">(128)</span>
+ LC_set_label :  Ubatt -> 0 <BR>
+<span style="font-size:60%">(128)</span>
+ LC_set_label (ET/NG7 signal):  Ubatt -> Kernel.BatteryControl.U_Battery_target <BR>
+<span style="font-size:60%">(128)</span>
+ LC_set_lcpa : Kernel.BatteryControl.U_Battery_target -> 0 <BR>
+<span style="font-size:60%">(128)</span>
+ LC_set_signal : Kernel.BatteryControl.U_Battery_target -> 0 <BR>
+<span style="font-size:60%">(128)</span>
+ S_wait_ms : 500 ms<BR>
+<span style="font-size:60%">(129)</span>
+VEC_check_running : OLE_handle -> Measurement -> Running() .. <BR>
+<span style="font-size:60%">(129)</span>
+VEC_check_running : 'CANalyzer' on localhost is NOT running <BR>
+<span style="font-size:60%">(129)</span>
+ CA_trace_check_running : CAN trace not running<BR>
+    </P>
+    [<A HREF="#TOP">TOP</A>]<P><HR></P>
+    <P style="margin-left:1cm">
+<span style="font-size:60%">(129)</span>
+ ==> Reading PURPOSE of RB_UNIVERSAL_01J <BR>
+<span style="font-size:60%">(129)</span>
+ ==> Reading PURPOSE of RB_UNIVERSAL_01J <BR>
+<B><span style="font-size:60%">(129)</span>
+   >>>>  RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R  <<<<<BR></B>
+<B><span style="font-size:60%">(129)</span>
+   ==> VERDICT_PASS <<<<<BR></B>
+<B><span style="font-size:60%">(129)</span>
+   stopped at 30.04.2025 20:55:15 <BR></B>
+<B><span style="font-size:60%">(129)</span>
+   elapsed 129 sec<BR><BR></B>
+<span style="font-size:60%">(129)</span>
+ Renaming 'C:\temp\STEPS_AddTcDoc_TEMP\' to 'C:\temp\0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc' .. <BR>
+<span style="font-size:60%">(129)</span>
+ S_open_zip : Open new zip-archive C:\temp\0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc.zip<BR>
+<span style="font-size:60%">(129)</span>
+ S_add_to_zip : executing add command '"C:\Program Files\7-Zip\7z.exe" a -tzip C:\temp\0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc.zip  C:\temp\0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc '<BR>
+<span style="font-size:60%">(129)</span>
+ S_call_command : calling '"C:\Program Files\7-Zip\7z.exe" a -tzip C:\temp\0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc.zip  C:\temp\0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc ' ...<BR>
+<span style="font-size:60%">(130)</span>
+ S_call_command : ... done<BR><BR>
+<span style="font-size:60%">(130)</span>
+ S_call_command : Printing screen output from called command : <BR>
+<span style="font-size:60%">(130)</span>
+<BR>
+<span style="font-size:60%">(130)</span>
+7-Zip 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29<BR>
+<span style="font-size:60%">(130)</span>
+<BR>
+<span style="font-size:60%">(130)</span>
+Scanning the drive:<BR>
+<span style="font-size:60%">(130)</span>
+1 folder, 1 file, 14601647 bytes (14 MiB)<BR>
+<span style="font-size:60%">(130)</span>
+<BR>
+<span style="font-size:60%">(130)</span>
+Creating archive: C:\temp\0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc.zip<BR>
+<span style="font-size:60%">(130)</span>
+<BR>
+<span style="font-size:60%">(130)</span>
+Add new data to archive: 1 folder, 1 file, 14601647 bytes (14 MiB)<BR>
+<span style="font-size:60%">(130)</span>
+<BR>
+<span style="font-size:60%">(130)</span>
+<BR>
+<span style="font-size:60%">(130)</span>
+Files read from disk: 1<BR>
+<span style="font-size:60%">(130)</span>
+Archive size: 1121206 bytes (1095 KiB)<BR>
+<span style="font-size:60%">(130)</span>
+Everything is Ok<BR>
+<span style="font-size:60%">(130)</span>
+<BR>
+<span style="font-size:60%">(130)</span>
+ S_close_zip : ... done <BR>
+<span style="font-size:60%">(130)</span>
+ Copy 'C:\temp\0091_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R_tcdoc.zip' -> 'C:/USER/GRX2KOR/Acceptance_Variant/Steps_AT_Variant_Test/logs/Variant_PS_02_CVT_TXAX_20250430_174401' <BR>
+<span style="color:teal"><BR>!--WARNING--! => Please use testlist downloaded from QC {CODE: 0} <= !--WARNING--!<BR> packg	: main <BR> file 	: C:/tas/STEPS/R6_10/STEPS_exec/STEPS_exec_engine.bat <BR> line 	: 859 <BR> sub 	: main::write_tc_results_to_logs <BR><BR></span>
+
+<!-- BEGIN EVAL COLLECTION 
+
+  EVAL COLUMN: NBR
+  EVAL CONTENT: 0091
+
+  EVAL COLUMN: type
+  EVAL CONTENT: MANUAL
+
+  EVAL COLUMN: TC_ID
+  EVAL CONTENT: RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R
+
+  EVAL COLUMN: Req_ID_RB
+  EVAL CONTENT: 
+
+  EVAL COLUMN: TEST_DESCRIPTION
+  EVAL CONTENT: trace_start
+  EVAL CONTENT: wait_1000 ms
+  EVAL CONTENT: ecu_on
+  EVAL CONTENT: set_model_values
+  EVAL CONTENT: set_model_values
+  EVAL CONTENT: read_CAN_signals (1)
+  EVAL CONTENT: wait_3000 ms
+  EVAL CONTENT: set_model_values
+  EVAL CONTENT: wait_5000 ms
+  EVAL CONTENT: read_CAN_signals (2)
+  EVAL CONTENT: wait_3000 ms
+  EVAL CONTENT: set_model_values
+  EVAL CONTENT: wait_3000 ms
+  EVAL CONTENT: set_model_values
+  EVAL CONTENT: wait_3000 ms
+  EVAL CONTENT: set_model_values
+  EVAL CONTENT: wait_5000 ms
+  EVAL CONTENT: read_CAN_signals (3)
+  EVAL CONTENT: wait_3000 ms
+  EVAL CONTENT: set_model_values
+  EVAL CONTENT: wait_3000 ms
+  EVAL CONTENT: undo_set_model_values
+  EVAL CONTENT: ecu_off
+  EVAL CONTENT: trace_stop
+
+  EVAL COLUMN: SET_MODEL_VALUES
+  EVAL CONTENT: set_model_value_to_constant =%('Selector'=>'6' 'model_gear'=>'gear_D' )
+  EVAL CONTENT: set_model_value_to_constant_2 =%('model_Mode_Accelerator'=>'2' 'model_Mode_Brake'=>'2' )
+  EVAL CONTENT: set_model_value_to_constant_3 =%('model_target_speed'=>'30' )
+  EVAL CONTENT: set_model_value_to_constant_4 =%('model_target_speed'=>'0' )
+  EVAL CONTENT: set_model_value_to_constant_5 =%('Selector'=>'-1' 'model_gear'=>'gear_R' )
+  EVAL CONTENT: set_model_value_to_constant_6 =%('model_target_speed'=>'-30' )
+  EVAL CONTENT: set_model_value_to_constant_7 =%('model_target_speed'=>'0' )
+
+  EVAL COLUMN: CAN_SIGNALS
+  EVAL CONTENT: 
+  EVAL CONTENT: (Reading 1)
+  EVAL CONTENT: SIG:  VSA_RR_ROT_DIRECTION
+  EVAL CONTENT: EXP:  3
+  EVAL CONTENT: FND:  3
+  EVAL CONTENT: SIG:  VSA_ABS_RL_WHEEL_SPEED
+  EVAL CONTENT: EXP:  0
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT: SIG:  VSA_RL_ROT_DIRECTION
+  EVAL CONTENT: EXP:  3
+  EVAL CONTENT: FND:  3
+  EVAL CONTENT: SIG:  VSA_ABS_FL_WHEEL_SPEED
+  EVAL CONTENT: EXP:  0
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT: SIG:  VSA_FR_ROT_DIRECTION
+  EVAL CONTENT: EXP:  3
+  EVAL CONTENT: FND:  3
+  EVAL CONTENT: SIG:  VSA_ABS_RR_WHEEL_SPEED
+  EVAL CONTENT: EXP:  0
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT: SIG:  VSA_FL_ROT_DIRECTION
+  EVAL CONTENT: EXP:  3
+  EVAL CONTENT: FND:  3
+  EVAL CONTENT: SIG:  VSA_ABS_FR_WHEEL_SPEED
+  EVAL CONTENT: EXP:  0
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT: 
+  EVAL CONTENT: (Reading 2)
+  EVAL CONTENT: SIG:  VSA_RR_ROT_DIRECTION
+  EVAL CONTENT: EXP:  1
+  EVAL CONTENT: FND:  1
+  EVAL CONTENT: SIG:  VSA_ABS_RL_WHEEL_SPEED
+  EVAL CONTENT: EXP:  interval -oo < X < 30
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT:  VERDICT_PASS
+  EVAL CONTENT: 
+  EVAL CONTENT: SIG:  VSA_RL_ROT_DIRECTION
+  EVAL CONTENT: EXP:  1
+  EVAL CONTENT: FND:  1
+  EVAL CONTENT: SIG:  VSA_ABS_FL_WHEEL_SPEED
+  EVAL CONTENT: EXP:  interval -oo < X < 30
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT:  VERDICT_PASS
+  EVAL CONTENT: 
+  EVAL CONTENT: SIG:  VSA_FR_ROT_DIRECTION
+  EVAL CONTENT: EXP:  1
+  EVAL CONTENT: FND:  1
+  EVAL CONTENT: SIG:  VSA_ABS_RR_WHEEL_SPEED
+  EVAL CONTENT: EXP:  interval -oo < X < 30
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT:  VERDICT_PASS
+  EVAL CONTENT: 
+  EVAL CONTENT: SIG:  VSA_FL_ROT_DIRECTION
+  EVAL CONTENT: EXP:  1
+  EVAL CONTENT: FND:  1
+  EVAL CONTENT: SIG:  VSA_ABS_FR_WHEEL_SPEED
+  EVAL CONTENT: EXP:  interval -oo < X < 30
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT:  VERDICT_PASS
+  EVAL CONTENT: 
+  EVAL CONTENT: 
+  EVAL CONTENT: (Reading 3)
+  EVAL CONTENT: SIG:  VSA_RR_ROT_DIRECTION
+  EVAL CONTENT: EXP:  2
+  EVAL CONTENT: FND:  2
+  EVAL CONTENT: SIG:  VSA_ABS_RL_WHEEL_SPEED
+  EVAL CONTENT: EXP:  interval -oo < X < 30
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT:  VERDICT_PASS
+  EVAL CONTENT: 
+  EVAL CONTENT: SIG:  VSA_RL_ROT_DIRECTION
+  EVAL CONTENT: EXP:  2
+  EVAL CONTENT: FND:  2
+  EVAL CONTENT: SIG:  VSA_ABS_FL_WHEEL_SPEED
+  EVAL CONTENT: EXP:  interval -oo < X < 30
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT:  VERDICT_PASS
+  EVAL CONTENT: 
+  EVAL CONTENT: SIG:  VSA_FR_ROT_DIRECTION
+  EVAL CONTENT: EXP:  2
+  EVAL CONTENT: FND:  2
+  EVAL CONTENT: SIG:  VSA_ABS_RR_WHEEL_SPEED
+  EVAL CONTENT: EXP:  interval -oo < X < 30
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT:  VERDICT_PASS
+  EVAL CONTENT: 
+  EVAL CONTENT: SIG:  VSA_FL_ROT_DIRECTION
+  EVAL CONTENT: EXP:  2
+  EVAL CONTENT: FND:  2
+  EVAL CONTENT: SIG:  VSA_ABS_FR_WHEEL_SPEED
+  EVAL CONTENT: EXP:  interval -oo < X < 30
+  EVAL CONTENT: FND:  0
+  EVAL CONTENT:  VERDICT_PASS
+  EVAL CONTENT: 
+
+  EVAL COLUMN: RB_FAULTS
+  EVAL CONTENT: 
+  EVAL CONTENT: (Reading 1)
+  EVAL CONTENT: EXP:   (mand)
+  EVAL CONTENT: EXP:   (opt)
+  EVAL CONTENT: EXP:   (disj)
+  EVAL CONTENT: FND:  
+
+  EVAL COLUMN: CU_FAULTS
+  EVAL CONTENT: 
+  EVAL CONTENT: (Reading 1)
+  EVAL CONTENT: EXP:   (mand)
+  EVAL CONTENT: EXP:   (opt)
+  EVAL CONTENT: EXP:   (disj)
+  EVAL CONTENT: FND:  
+
+  EVAL COLUMN: VERDICT
+  EVAL CONTENT: PASS
+
+-->
+
+    </P>
+
+</BODY>
+</HTML>
+<span style="font-size:60%">(130)</span>
+S_w2tc_xml: Writing data to XML file ( C:\temp\TestCase_BANI-C-009L8_30-04-2025_20-53-06.xml ) <BR>
+<span style="font-size:60%">(130)</span>
+ Writing C:/USER/GRX2KOR/Acceptance_Variant/Steps_AT_Variant_Test/logs/Variant_PS_02_CVT_TXAX_20250430_174401/300425_2053_RB_UNIVERSAL_01J-7_24_CheckWheelRotationDirection_D_R.html <BR>

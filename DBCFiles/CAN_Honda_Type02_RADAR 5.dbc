@@ -1,0 +1,1275 @@
+VERSION "DIPBNNNYYYYYYYYYYYNNNNNNNNNNNNYNNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VSA TM SS30 SRS METER ESB ENG EAT E4WD CVT ACC EPS RX ICC A4WS IDAS EBB IMG BRK Labcar_Receive EPB TRC TPMS SWTCH BCM TESTER
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ VSA_MCPS_OFFSET : 0|4@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_CHECKSUM_106 : 0|4@0- (1,0) [0|0] "1" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_106 : 0|2@0- (1,0) [0|0] "1" Vector__XXX
+ SG_ VSA_REQ_PRELOAD_MODE : 0|3@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_HOLD_INFO : 0|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_ISAB_COOPERATE : 0|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_HSA_COOPERATE : 0|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ ENG_ALIVECOUNTER_1DD : 0|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_req8 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_req7 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_req6 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_req5 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_req4 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_req3 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_req2 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_req1 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_STEERING_ANGLE : 0|16@0- (1,0) [-32768|32767] "deg" Vector__XXX
+
+BO_ 93 VSA_05D: 8 Vector__XXX
+ SG_ VSA_05D_PSFAILURE_STATUS : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_05D_PS : 15|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_05D_MSG_CNT : 39|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_05D_MAX_PRESSURE_STATUS : 21|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_05D_MAX_PRESSURE : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_05D_MAC : 47|24@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2588256839 VSA_1A45AA47: 8 Vector__XXX
+ SG_ VSA_1A5_SUBRECO_UPDATE_1A45AA47 : 19|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_1A5_OBS_UPDATE_1A45AA47 : 3|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_1A5_FREEZE_UPDATE_1A45AA47 : 17|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_1A5_DTC_UPDATE_1A45AA47 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_1A5_CHECKSUM_1A45AA47 : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_1A5_ALIVE_CNT_1A45AA47 : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 767 VSA_2FF: 8 Vector__XXX
+ SG_ VSA_2FF_CHECKSUM : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_2FF_BRKPAD_TEMP_RR : 25|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_2FF_BRKPAD_TEMP_RL : 19|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_2FF_BRKPAD_TEMP_FR : 13|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_2FF_BRKPAD_TEMP_FL : 7|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_2FF_BRKPAD_TEMP_CAL_INH : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_2FF_BRKPAD_TEMP_CAL_FAIL : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_2FF_ALIVE : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 526 VSA_20E_WSS_DIRECT: 8 Vector__XXX
+ SG_ VSA_20E_RR_ROT_DIRECT : 33|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_20E_RR_PULSE : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_20E_RL_ROT_DIRECT : 35|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_20E_RL_PULSE : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_20E_FR_ROT_DIRECT : 37|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_20E_FR_PULSE : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_20E_FL_ROT_DIRECT : 39|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_20E_FL_PULSE : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564485416 ID18DAF128_VSAID: 8 Vector__XXX
+ SG_ ID18DAF128_B7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DAF128_B6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DAF128_B5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DAF128_B4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DAF128_B3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DAF128_B0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DAF128_B2 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DAF128_B1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564434161 ID18DA28F1_TestIDForVSA: 8 Vector__XXX
+ SG_ ID18DA28F1_B7 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DA28F1_B6 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DA28F1_B5 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DA28F1_B4 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DA28F1_B3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DA28F1_B2 : 23|8@0+ (1,0) [0|0] "1" Vector__XXX
+ SG_ ID18DA28F1_B1 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DA28F1_B0 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1296 METER_510: 8 Vector__XXX
+ SG_ METER_TSPS_SPEED_LIMIT : 39|7@0+ (1,0) [0|127] "" Vector__XXX
+ SG_ METER_CHECKSUM_510 : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_ALIVECOUNTER_510 : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 891 METER_37B: 8 Vector__XXX
+ SG_ METER_RMILL_SML : 36|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_RM_HLHIRLY : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_RM_HILLORLY : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_CHECKSUM_37B : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_ALIVECOUNTER_37B : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 777 METER_309: 8 Vector__XXX
+ SG_ METER_SPEED_UNIT : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_SP_TYPE : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_DISPLAY_SPEED : 39|16@0+ (0.01,0) [0|655.35] "km/h" Vector__XXX
+ SG_ METER_DIGITAL_SPEED_TARGET : 7|16@0+ (0.01,0) [0|655.35] "km/h" Vector__XXX
+ SG_ METER_DIGITAL_SPEED_DISPLAY : 31|8@0+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ METER_CHECKSUM_309 : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_ALIVECOUNTER_309 : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 662 METER_296: 4 Vector__XXX
+ SG_ METER_SW_STATUS_LKAS_CCLIM_DIST : 4|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_SW_STATUS_CC_STANDARD : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_CHECKSUM_296 : 27|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ METER_ALIVECOUNTER_296 : 29|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 612 PARKSR_264: 8 Vector__XXX
+ SG_ PARLSR_SIO_DIST_RR : 31|8@0+ (1,0) [0|255] "cm" Vector__XXX
+ SG_ PARKSR_SIO_DIST_RRC_RR : 55|8@0+ (1,0) [0|255] "cm" Vector__XXX
+ SG_ PARKSR_SIO_DIST_RLC_RRC : 47|8@0+ (1,0) [0|255] "cm" Vector__XXX
+ SG_ PARKSR_SIO_DIST_RL_RLC : 39|8@0+ (1,0) [0|255] "cm" Vector__XXX
+ SG_ PARKSR_CHECKSUM_264 : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PARKSR_ALIVECOUNTER_264 : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 610 PARKSR_262: 8 Vector__XXX
+ SG_ PARKSR_SIO_SYSTEM_STATUS : 45|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PARKSR_CHECKSUM_262 : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PARKSR_ALIVECOUNTER_262 : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 525 ESB_20D: 8 Vector__XXX
+ SG_ ESB_IDAS_REQ_BRAKE_PRESSURE : 55|10@0+ (12.5,0) [0|12787.5] "kPa" Vector__XXX
+ SG_ ESB_CHECKSUM_20D : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ESB_ALIVECOUNTER_20D : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 477 ENG_1DD: 8 Vector__XXX
+ SG_ ENG_IDAS_MINIMUM_TORQUE : 7|8@0- (1,0) [-32768|32767] "Nm" Vector__XXX
+ SG_ ENG_IDAS_MAXMUM_TORUQE : 15|8@0- (1,0) [-32768|32767] "Nm" Vector__XXX
+ SG_ ENG_IDAS_INH : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ENG_IDAS_FAIL : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ENG_CHECKSUM_1DD : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_1DC : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 0 EPS_1AB: 3 Vector__XXX
+ SG_ EPS_VARIANT_FLAG : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPS_CHECKSUM_1AB : 19|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPS_ALIVECOUNTER_1AB : 20|2@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 399 EPS_18F: 7 Vector__XXX
+ SG_ EPS_UNIT_STATUS : 39|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPS_TABLE_MODE_EPS : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPS_STEERING_TORUQE : 7|16@0- (0.001,0) [-32.768|32.767] "Nm" Vector__XXX
+ SG_ EPS_MOTOR_ROTATING_SPEED : 23|16@0- (0.125,0) [-4096|40953875] "deg/s" Vector__XXX
+ SG_ EPS_LKAS_REQUIRED_MODE : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPS_CHECKSUM_18F : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPS_ALIVE_COUNTER_18F : 53|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 344 EAT_MSG158: 8 Vector__XXX
+ SG_ EAT_TRANS_SPEED_VNC : 7|16@0+ (0.01,0) [0|655.35] "km/h" Vector__XXX
+ SG_ EAT_TRANS_SPEED : 39|16@0+ (0.01,0) [0|655.35] "km/h" Vector__XXX
+ SG_ EAT_CHECKSUM_158 : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EAT_ALIVECOUNTER_158 : 61|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564485552 D_RADARRes_ID: 8 Vector__XXX
+ SG_ DIAG_res8 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res7 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res6 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res5 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res4 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res3 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res2 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res1 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2564468977 D_TesterReq_Physical: 8 Vector__XXX
+ SG_ DIAG_res8 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res7 : 55|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res6 : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res5 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res4 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res3 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res2 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIAG_res1 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 57 SRS_039: 3 SRS
+ SG_ SRS_CDS_REAR : 5|1@0+ (1,0) [0|1] ""  VSA
+ SG_ SRS_CDS_SIDE : 6|1@0+ (1,0) [0|1] ""  VSA
+ SG_ SRS_CDS_FRONT : 7|1@0+ (1,0) [0|1] ""  VSA
+ SG_ SRS_CHECKSUM_039 : 19|4@0+ (1,0) [0|15] ""  VSA
+ SG_ SRS_ALIVE_COUNTER_039 : 21|2@0+ (1,0) [0|3] ""  VSA
+
+BO_ 99 ICC_063: 8 ICC
+ SG_ ICC_TYM_LDI_SEL : 7|16@0- (2,0) [-65536|65534] "Nm"  VSA
+ SG_ ICC_REQ_TYM_MODE : 20|3@0+ (1,0) [0|7] ""  VSA
+ SG_ ICC_F_ACTON_LDI_SEL : 21|1@0+ (1,0) [0|1] ""  VSA
+ SG_ ICC_F_ENABLE_LDI_SEL : 22|1@0+ (1,0) [0|1] ""  VSA
+ SG_ ICC_F_RQ_LDI_SEL : 23|1@0+ (1,0) [0|1] ""  VSA
+ SG_ ICC_CHECKSUM_063 : 59|4@0+ (1,0) [0|15] ""  VSA
+ SG_ ICC_ALIVE_COUNTER_063 : 61|2@0+ (1,0) [0|3] ""  VSA
+
+BO_ 131 IMG_083: 8 IMG
+ SG_ IMG_REQ_BRKTRQ_INC : 7|16@0+ (1,0) [0|65535] ""  VSA
+ SG_ IMG_REQ_BRKHLDTRQ : 23|16@0+ (0.1,0) [0|6553.5] ""  VSA
+ SG_ IMG_BRKMODE_STATUS : 39|4@0+ (1,0) [0|15] ""  VSA
+ SG_ IMG_BRKHLDMODE_STATUS : 35|4@0+ (1,0) [0|15] ""  VSA
+ SG_ IMG_CHECKSUM_083 : 59|4@0+ (1,0) [0|15] ""  VSA
+ SG_ IMG_ALIVE_COUNTER_083 : 61|2@0+ (1,0) [0|3] ""  VSA
+ SG_ IMG_REQ_BRKRELAY_STATUS : 63|1@0+ (1,0) [0|1] ""  VSA
+
+BO_ 137 IMG_089: 6 IMG
+ SG_ IMG_BRKCTL_STATE : 2|3@0+ (1,0) [0|7] ""  VSA
+ SG_ IMG_LSF_BHOLD_ACT : 5|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IMG_CHECKSUM_089 : 43|4@0+ (1,0) [0|15] ""  VSA
+ SG_ IMG_ALIVE_COUNTER_089 : 45|2@0+ (1,0) [0|3] ""  VSA
+ SG_ IMG_REQUEST_EPB_ACT : 46|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IMG_BRK_FAIL : 47|1@0+ (1,0) [0|1] ""  VSA
+
+BO_ 145 VSA_091: 8 VSA
+ SG_ VSA_YAW_1 : 7|10@0+ (0.244141,-125) [-125|124.756] "" Vector__XXX
+ SG_ VSA_DEGC : 13|8@0+ (1,-103) [-103|152] "" Vector__XXX
+ SG_ VSA_LAT_G : 19|10@0+ (0.0478516,-24.5) [-24.5|24.4521] "" Vector__XXX
+ SG_ VSA_LON_G : 25|10@0+ (0.0478516,-24.5) [-24.5|24.4521] "" Vector__XXX
+ SG_ VSA_T_ERR_LON_G : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_T_ERR_LAT_G : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_T_ERR_DEGC : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_T_ERR_YAW1 : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_SENSOR_ERR_MC : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_SENSOR_STATE_IG : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_P_ERR_LON_G : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_P_ERR_LAT_G : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_P_ERR_DEGC : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_P_ERR_YAW1 : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_091 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_091 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_SENSOR_START_UP : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 199 VSA_0C7: 4 VSA
+ SG_ VSA_MAX_PRESSURE_0C7 : 7|8@0+ (100,0) [0|25500] "KPa" Vector__XXX
+ SG_ VSA_MASTER_CYLINDER_PRESSURE_0C7 : 15|10@0+ (30,-3000) [-3000|27690] "KPa"  EBB
+ SG_ VSA_FAIL_MC_PRESSURE_SENSOR_0C7 : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_CTRL_0C7 : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_DIAG_STATUS_0C7 : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IG_ON_0C7 : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MAX_PRESSURE_STATUS_0C7 : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_CHECKSUM_0C7 : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_0C7 : 29|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_HBB_CTRL_0C7 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 231 EBB_0E7: 5 EBB
+ SG_ EBB_OUTPUTROD_STROKE_0E7 : 7|12@0+ (0.015625,-5) [-5|58.984375] "mm" Vector__XXX
+ SG_ EBB_DRIVER_REQ_STROKE_STATUS_0E7 : 9|2@0+ (1,0) [0|3] ""  Labcar_Receive
+ SG_ EBB_OUTPUTROD_STATUS_0E7 : 11|2@0+ (1,0) [0|3] ""  Labcar_Receive
+ SG_ EBB_DRIVER_REQ_STROKE_0E7 : 18|12@0+ (0.015625,-5) [-5|58.984375] "mm"  Labcar_Receive
+ SG_ EBB_WARN_STATUS_BRAKESYSTEM_0E7 : 19|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ EBB_WARN_STATUS_BRAKE_0E7 : 20|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ EBB_EXTREQ_CTRL_STATUS_0E7 : 23|3@0+ (1,0) [0|7] ""  Labcar_Receive
+ SG_ EBB_CHECKSUM_0E7 : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ EBB_ALIVE_COUNTER_0E7 : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EBB_EXTREQ_CTRL_0E7 : 38|1@0+ (1,0) [0|1] ""  Labcar_Receive
+
+BO_ 232 VSA_0E8: 7 VSA
+ SG_ VSA_VEHICLE_SPEED_0E8 : 7|14@0+ (0.015625,0) [0|255.984375] "m/s"  EBB
+ SG_ VSA_VEHICLE_SPEED_STATUS_0E8 : 9|2@0+ (1,0) [0|3] ""  EBB
+ SG_ VSA_TARGET_CALIPER_PRESSURE_0E8 : 23|9@0+ (50,0) [0|25550] "KPa"  EBB
+ SG_ VSA_EXTERNAL_PRESSURE_ACTIVE_0E8 : 30|2@0+ (1,0) [0|3] ""  EBB
+ SG_ VSA_TARGET_FLOW_RATE_0E8 : 39|16@0+ (0.0078125,-252) [-252|252] "ml/s"  EBB
+ SG_ VSA_CHECKSUM_0E8 : 51|4@0+ (1,0) [0|15] ""  EBB
+ SG_ VSA_ALIVE_COUNTER_0E8 : 53|2@0+ (1,0) [0|3] ""  EBB
+
+BO_ 262 VSA_106: 8 VSA
+ SG_ VSA_TARGET_PRESSUE : 7|11@0- (23.96,0) [0|0] "kPa" Vector__XXX
+ SG_ VSA_HDC_REQ_TRQ : 31|16@0- (1,0) [0|0] "Nm" Vector__XXX
+ SG_ VSA_HDC_REQ_ACT : 18|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_INHIBIT_FOR_EBB : 19|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_FAILURE_FOR_EBB : 20|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_RECEIVE_ERROR_1A8 : 21|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_PRESSURE_CTRL : 22|1@0- (1,0) [0|0] "" Vector__XXX
+ SG_ VSA_REQ_PRELOAD_MODE : 9|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ VSA_HOLD_INFO : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ISAB_COOPERATE : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_HSA_COOPERATE : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_106 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_106 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 274 EPB_112: 3 EPB
+ SG_ EPB_CLUTCH_PEDAL_STROKE : 7|8@0+ (0.392156862745098,0) [0|100] "%" Vector__XXX
+ SG_ EPB_CHECKSUM_112 : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ EPB_ALIVE_COUNTER_112 : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EPB_CLUTCH_PEDAL_FAIL : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 302 VSA_12E: 8 VSA
+ SG_ VSA_DRV_BRKTRQ_12E : 7|16@0+ (1,0) [0|65535] "Nm" Vector__XXX
+ SG_ VSA_ISAB_ACT_12E : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ISAB_ENABLE_12E : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IS_RESTART_INHIBIT_REQ_12E : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IS_SHIFT_INHIBIT_REQUEST_12E : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESB_FAILURE_FOR_IS_12E : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_12E : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_12E : 61|2@0+ (1,0) [0|3] ""  EBB
+
+BO_ 304 ENG_130: 8 ENG
+ SG_ ENG_ENG_TRQ_130 : 7|16@0- (1,0) [-32768|32767] "Nm" Vector__XXX
+ SG_ ENG_DRIVER_REQ_TRQ_130 : 23|16@0- (1,0) [-32768|32767] "Nm" Vector__XXX
+ SG_ ENG_SMART_ACCELE_PEDAL_POSITION_ : 39|8@0+ (0.39215686275,0) [0|100] "%" Vector__XXX
+ SG_ ENG_VSA_ACK1_130 : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ENG_PP_DISABLE_130 : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_BRK_ACCELE_PEDAL_ON_130 : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_PERMIT_PLUS_TRQ_130 : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_INHIBIT_VSA_CONTROL_130 : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_REFUSED_VSA_CONTROL_130 : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_SHFT_IN_NEUTRAL : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_SHFT_IN_REVERSE : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CLUTCH_SW_CC : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CLUTCH_SW_SIL : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ENG_E4WD_DRIVE_MODE_130 : 54|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ ENG_EV_DRIVE_STATE_130 : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CHECKSUM_130 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_130 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ENG_NEUTRAL_SENSOR_FAIL_130 : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_RECEIVE_ERROR_1AA_130 : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 310 MessageID_136h: 8 ENG
+ SG_ ENG_VSA_ACK1_136 : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_VSA_PERMIT_PLUS_TRQ_136 : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_ACTIVE_TRQ_CONTROL : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_INHIBIT_VSA_CONTROL_136 : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_REFUSED_VSA_CONTROL_136 : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CHECKSUM_136h : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_136h : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 311 ENG_137: 7 ENG
+ SG_ ENG_INTAKE_MANIFOLD_PRESSURE : 47|8@0+ (0.0196,0) [0|4.998] "V" Vector__XXX
+ SG_ ENG_CHECKSUM_137 : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_137 : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 314 MessageID_13Ah: 8 ENG
+ SG_ ENG_ACCELE_PEDAL_POSITION : 15|8@0+ (0.39215686275,0) [0|100] "%" Vector__XXX
+ SG_ ENG_CHECKSUM_13Ah : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_13Ah : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 315 ENG_13B: 7 ENG
+ SG_ ENG_POWER_PLANT_SPEED : 7|15@0+ (1,0) [0|32767] "RPM" Vector__XXX
+ SG_ ENG_MOT_AXLE_TRQ_L : 8|15@0- (1,0) [-16384|16383] "Nm" Vector__XXX
+ SG_ ENG_MOT_AXLE_TRQ_R : 25|15@0- (1,0) [-16384|16383] "Nm" Vector__XXX
+ SG_ ENG_CHECKSUM_13B : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_13B : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ENG_E4WD_FAIL_STATUS : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_EM_TEST_MODE_ENABLE_VW_RAW : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 316 ENG_13C: 8 ENG
+ SG_ ENG_ENG_TRQ_13C : 7|16@0- (0.2,0) [-6553.6|6553.4] "Nm" Vector__XXX
+ SG_ ENG_DRIVER_REQ_TRQ_13C : 23|16@0- (0.2,0) [-6553.6|6553.4] "Nm" Vector__XXX
+ SG_ ENG_SMART_ACCELE_PEDAL_POSITION : 39|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+ SG_ ENG_VSA_ACK1_13C : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_BRK_ACCELE_PEDAL_ON_13C : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_PERMIT_PLUS_TRQ_13C : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_INHIBIT_VSA_CONTROL_13C : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_VSA_REFUSED_VSA_CONTROL_13C : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_SHFT_IN_NEUTRAL_13C : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_SHFT_IN_REVERSE_13C : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CLUTCH_SW_CC_13C : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CAS_REQ : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CHECKSUM_13C : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_13C : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ENG_NEUTRAL_SENSOR_FAIL_13C : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_RECEIVE_ERROR_1AAh_13C : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 319 MessageID_13Fh: 8 ENG
+ SG_ ENG_ENG_TRQ : 7|16@0- (0.2,0) [-6553.6|6553.4] "Nm" Vector__XXX
+ SG_ ENG_DRIVER_REQ_TRQ : 23|16@0- (0.2,0) [-6553.6|6553.4] "Nm" Vector__XXX
+ SG_ ENG_CHECKSUM_13Fh : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_13Fh : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ENG_RECEIVE_ERROR_1AAh : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 320 ENG_140: 8 ENG
+ SG_ ENG_REQUEST_EPB_ACT_140 : 6|1@0+ (1,0) [0|1] ""  VSA
+ SG_ ENG_NSS_FAIL_DETECT : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CHECKSUM_140 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_140 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 332 ESB_14C: 8 ESB
+ SG_ ESB_REQ_HBC_14C : 7|1@0+ (1,0) [0|1] "-"  VSA
+ SG_ ESB_RESET_FLAG_14C : 32|1@0+ (1,0) [0|1] "-"  VSA
+ SG_ ESB_MESSAGE_COUNTER_14C : 39|7@0+ (1,0) [0|127] "-"  VSA
+ SG_ ESB_MAC_14C : 47|24@0+ (1,0) [0|16777215] "-"  VSA
+
+BO_ 334 E4WD_14E: 8 E4WD
+ SG_ E4WD_MDTL_14E : 7|8@0+ (10,0) [0|2550] "Nm"  VSA
+ SG_ E4WD_MDTR_14E : 15|8@0+ (10,0) [0|2550] "Nm"  VSA
+ SG_ E4WD_CHECKSUM_14E : 59|4@0+ (1,0) [0|15] ""  VSA
+ SG_ E4WD_ALIVE_COUNTER_14E : 61|2@0+ (1,0) [0|3] ""  VSA
+
+BO_ 339 MessageID_153h: 7 E4WD
+ SG_ E4WD_MDTL : 7|8@0+ (10,0) [0|2550] "Nm" Vector__XXX
+ SG_ E4WD_MDTR : 15|8@0+ (10,0) [0|2550] "Nm" Vector__XXX
+ SG_ E4WD_REWRITE_START : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ E4WD_CHECKSUM_153h : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ E4WD_ALIVE_COUNTER_153h : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 353 CVT_161: 8 CVT
+ SG_ CVT_CAS_ON : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_CHECKSUM_161 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ CVT_ALIVE_COUNTER_161 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 356 MessageID_164h: 8 METER
+ SG_ METER_SW_STATUS_PARK_BRAKE_164 : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_BRAKE_FLUID_164 : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_VSA_OFF_164 : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_CHECKSUM_164h : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_164h : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ METER_SW_STATUS_BHOLD_SENKOSYA : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 380 MessageID_17Ch: 8 ENG
+ SG_ ENG_ACPEDAL_POSITION : 7|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+ SG_ ENG_ENG_SPEED : 23|16@0+ (1,0) [0|65535] "rpm" Vector__XXX
+ SG_ ENG_SW_STATUS_BRAKE_ON : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CRUISE_STATUS_CRUISE_INH : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CRUISE_STATUS_CRUISE_ACT : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_ENG_FAILCODE_MIL_INT : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CRUISE_STATUS_CRUISE_ACT_2 : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_ACCELE_FAIL_INFORMATION : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_IS_PRE_PROGRESS : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_IS_PRE_RESTART : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_IS_PROGRESS : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CHECKSUM_17Ch : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_17Ch : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 387 AHB_183: 8 ESB
+ SG_ AHB_REQ_TRQ_183 : 7|16@0+ (0.1,0) [0|6553.5] "Nm" Vector__XXX
+ SG_ AHB_REQ_PRESSURE : 23|16@0- (1,0) [-32768|32767] "kPa" Vector__XXX
+ SG_ AHB_CONTROL_PRESSURE : 39|16@0+ (1,0) [0|65535] ""  VSA
+ SG_ AHB_BPS_FAIL : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AHB_REQ_PRESSURE_FAIL : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AHB_CAS_EN : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AHB_WARN_STATUS_SYSTEM_183 : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AHB_REQ_BRAKERELAY_ACT : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AHB_VSA_INCREASE_PRESS_ACT : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AHB_CHECKSUM_183 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ AHB_ALIVE_COUNTER_183 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AHB_HBC_REQ : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AHB_VSACHG_FAIL : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 388 ESB_184: 8 ESB
+ SG_ ESB_VSA_INCREASE_PRESSURE_ACT2 : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_VSA_CONTROL_LIMIT : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_EPB_INHBIT_BRAKE : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_EPB_REFUSE_BRAKE : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_ECD_ACT : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_IG_ON_184 : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_HBC_REQ_184 : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_ACT_BRAKERELAY : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_INHIBIT_BRAKERELAY : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_FAIL_BRAKERELAY : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_BA_ACT : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESB_CHECKSUM_184 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ESB_ALIVE_COUNTER_184 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESB_BHOLD_STATUS_ACT : 62|1@0+ (1,0) [0|1] ""  RX
+ SG_ ESB_REQUEST_EPB_ACT : 63|1@0+ (1,0) [0|1] ""  RX
+
+BO_ 392 MessageID_188h: 6 EAT
+ SG_ EAT_GEAR_POSITION_ACTUAL : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ EAT_GEAR_POSITION_TARGET : 10|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EAT_FAILURE_FOR_VSA : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_SHFT_IN_PARKING : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_SHFT_IN_REVERSE : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_SHFT_IN_NEUTRAL : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_SHFT_IN_D5 : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_SHFT_IN_D4 : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_SHFT_IN_D3 : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_SHFT_IN_2 : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_SHFT_IN_1 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_CHECKSUM_188h : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ EAT_ALIVE_COUNTER_188h : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 401 CVT_191: 8 CVT
+ SG_ CVT_SHFT_IN_PARKING : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_SHFT_IN_REVERSE : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_SHFT_IN_NEUTRAL : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_SHFT_IN_D : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_SHFT_IN_S : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_SHFT_IN_L : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_GEAR_POSITION_IND_CVT : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ CVT_SW_STATUS_SMODE : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_REFUSE_VSA_CONTROL : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CVT_RATIO_INFO_191 : 31|8@0+ (0.015625,0) [0|3.984375] "" Vector__XXX
+ SG_ CVT_RATIO_TARGET : 39|8@0+ (0.015625,0) [0|3.984375] "" Vector__XXX
+ SG_ CVT_CHECKSUM_191 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ CVT_ALIVE_COUNTER_191 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ CVT_CAS_ON_191 : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 411 VSA_19Bh: 5 VSA
+ SG_ VSA_ABS_FL_WHEEL_PULSE_COUNTER : 7|8@0+ (1,0) [0|255] "-" Vector__XXX
+ SG_ VSA_ABS_FR_WHEEL_PULSE_COUNTER : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_ABS_RL_WHEEL_PULSE_COUNTER : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_ABS_RR_WHEEL_PULSE_COUNTER : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_CHECKSUM_19Bh : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_19Bh : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 419 TM_1A3: 8 TM
+ SG_ TM_GEAR_POSITION_ACTUAL : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TM_GEAR_POSITION_TARGET : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TM_GEAR_POSITION_IND : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TM_SW_STATUS_SMODE : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_FAILURE_FOR_VSA : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_SHIFT_IN_L : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_SHIFT_IN_S : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_SHIFT_IN_PARKING : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_SHIFT_IN_REVERSE : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_SHIFT_IN_NEUTRAL : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_SHIFT_IN_D : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_SHIFT_IN_B : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_BRAKE_HOLD_REQ_VSA : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TM_CHECKSUM_1A3h : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TM_ALIVE_COUNTER_1A3h : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 420 MessageID_1A4h: 8 VSA
+ SG_ VSA_MASTER_CYLINDER_PRESSURE_1A4 : 3|12@0+ (23.96,-2443.92) [-2443.92|95672.3] "kPa" Vector__XXX
+ SG_ VSA_FAIL_MC_PRESSURE_SENSOR_1A4 : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_INHBIT_MC_PRESSURE_SENSOR : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESS_ACT2 : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESS_ACT1 : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_VSA_ACT : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_ACT : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_VSA_MIL : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_MIL : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CASEN : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CAS_ACT : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_BA_ACT : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ACC_BRAKE_ACT : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ANSWER_DWS_INIT_REQUEST : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_PUNCTURE : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_DWS : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MID_REQUEST_VSA : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_LAMP_STATUS_OPERATE_VSA : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_LAMP_STATUS_VSA_OFF : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_VSA : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_ABS : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_BRAKE : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_L_MODE_ABS_EBD : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_TSA : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_REWRITE_START : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_BUZZER_STATUS : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_BRAKESYSTEM : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_LAMP_STATUS_HDC : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_HDC_APS_INHBIT : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_AHA_ACT : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MID_REQ_BHOLD_APPLY_BRAKE : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MID_REQ_BHOLD_EPB_OP_INFO : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MID_REQ_BHOLD_MISOP_GUIDE : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_MID_REQ_BHOLD : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ANSWER_BHOLD_CONFIG_REQ : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MID_REQ_BHOLD_STANDBY : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_LAMP_STATUS_STANBY_BHOLD : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_LAMP_STATUS_OPERATE_BHOLD : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_BHOLD : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_WARN_STATUS_HSA : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_HSA_STATUS_ACT : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESS_ACT4 : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESS_ACT : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESS_ACT3 : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESS_FAIL : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_BHOLD_STATUS_ACT : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_LAMP_BHOLD_APPLY_BRAKE : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_VSA_OS_CTRL : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESB_INCREASE_PRESS_ACT : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_1A4h : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1A4h : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_ABS_CTRL : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_VSA_CTRL : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 422 METER_1A6: 8 METER
+ SG_ METER_SW_STATUS_PARK_BRAKE_1A6 : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_BRAKE_FLUID_1A6 : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_VSA_OFF_1A6 : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_BHOLD : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ METER_RL_STATUS : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_HILL_CONTROL_1A6 : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ METER_CHECKSUM_1A6 : 59|4@0+ (1,0) [0|15] ""  SRS,EPS,ACC
+ SG_ METER_ALIVE_COUNTER_1A6 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ METER_DOOR_SW_STATUS_DR : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 423 EAT_1A7: 2 EAT
+ SG_ EAT_FAILURE_FOR_EPB : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_ATPRVS_SW_STATUS : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_ATPFWD_SW_STATUS : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EAT_CHECKSUM_1A7 : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ EAT_ALIVE_COUNTER_1A7 : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 424 BRK_1A8: 8 BRK
+ SG_ BRK_REQ_EPB_ACT : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BRK_BHOLD_ACT : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BRK_IG_STATE : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BRK_REQ_BRAKERELAY_ACT : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BRK_REQ_ISB_STATUS : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ BRK_REQ_HSA_STATUS : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ BRK_CHECKSUM_1A8 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ BRK_ALIVE_COUNTER_1A8 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 425 VSA_1A9h: 8 VSA
+ SG_ VSA_FZR_LIM_B : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FZR_CTCS_B : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_BRK_SW : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_E4WD_TRQ_LIMITER_REQ : 15|8@0+ (10,0) [0|2550] "Nm" Vector__XXX
+ SG_ VSA_E4WD_TRQ_UP_REQ : 31|8@0+ (10,0) [0|2550] "Nm" Vector__XXX
+ SG_ VSA_CHECKSUM_1A9 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1A9 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 426 MessageID_1AAh: 8 VSA
+ SG_ VSA_REQ_TRQ : 7|16@0- (0.2,0) [-6553.6|6553.4] "Nm" Vector__XXX
+ SG_ VSA_TRQ_CONTROL_MODE : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_SHIFT_REQ : 19|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_TRQ_DOWN_REQ_FUEL_CUT : 23|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_MNTMODE_STATUS_1AA : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_REVERSE_SWITCH_FAIL_1AA : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_SHFT_IN_REVERSE_1AA : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EDC_ACT : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_FOR_EPB : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_REQUEST_EPB_ACT : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EPB_INHIBIT_BRAKE : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EPB_REFUSE_BRAKE : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_TM_SUPPORT_BRAKE_REFUSE : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EBB_FAILURE_FOR_IS_1AA : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ISAB_ACT_1AA : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ISAB_ENABLE_1AA : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MASTER_CYLINDER_PRESSURE_1AA : 43|12@0+ (23.96,-2443.92) [-2443.92|95672.28] "kPa" Vector__XXX
+ SG_ VSA_EPT_ACT2_1AA : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EPT_ACT1_1AA : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IS_RESTART_INHIBIT_REQ_1AA : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IS_SHIFT_INHIBIT_REQUEST : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IG_ON_1AA : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_1AAh : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1AAh : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_REQ_MSR_PLUS_TRQ : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_BTCS_ACT : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 428 VSA_1AC: 8 VSA
+ SG_ VSA_REQ_TRQ_1AC : 7|16@0- (1,0) [-32768|32767] "Nm" Vector__XXX
+ SG_ VSA_TRQ_CONTROL_MODE_1AC : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_SHIFT_REQ_1AC : 19|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_TRQ_DOWN_REQ_FUEL_CUT_1AC : 23|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_MNTMODE_STATUS_1AC : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_REVERSE_SWITCH_FAIL_1AC : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_SHFT_IN_REVERSE_1AC : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ECD_ACT_1AC : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_FOR_EPB_1AC : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_REQUEST_EPB_ACT_1AC : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EPB_INHIBIT_BRAKE_1AC : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EPB_REFUSE_BRAKE_1AC : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_HAC_CUT_REQ_1AC : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_HBB_IS_REFUSE_REQ_1AC : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_LOW_VAC_IS_SHIFT_INHIBIT_REQ : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_HBB_IS_SHIFT_INHIBIT_REQ_1AC : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_TM_SUPPORT_BRAKE_REFUSE_1AC : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EBB_FAILURE_FOR_IS_1AC : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ISAB_ACT_1AC : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ISAB_ENABLE_1AC : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MASTER_CYLINDER_PRESSURE_1AC : 43|12@0+ (23.96,-2443.92) [-2443.92|95672.28] "kPa" Vector__XXX
+ SG_ VSA_EPT_ACT2_1AC : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EPT_ACT1_1AC : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IS_RESTART_INHIBIT_REQUEST_1 : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IS_SHIFT_INHIBIT_REQUEST_1AC : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IDS_TEMP_INHIBIT : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_IG_ON_1AC : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_1AC : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1AC : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_REQ_MSR_PLUS_TRQ_1AC : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_TSA_ACT_1AC : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 432 MessageID_1B0h: 7 VSA
+ SG_ VSA_PLANT_INSPECTION_STATUS : 25|1@0+ (1,0) [0|0] "1" Vector__XXX
+ SG_ VSA_ACC_CMBS_BRK_LIMIT : 31|6@0+ (0.2,0) [0|0] "m/s2" Vector__XXX
+ SG_ VSA_INHIBIT_BRAKERELAY_FOR_CMBS : 16|1@0+ (1,0) [0|0] "1" Vector__XXX
+ SG_ VSA_DA_PERMIT_STATUS : 17|1@0+ (1,0) [0|0] "1" Vector__XXX
+ SG_ VSA_ACT_BRAKERELAY : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_INHBIT_LAT_G_SENSOR : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_INHBIT_LONG_G_SENSOR : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_LAT_G_SENSOR : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_LONG_G_SENSOR : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_INHIBIT_BRAKERELAY : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_BRAKERELAY : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_SS30_BRAKE_ACT : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ACC_INHIBIT_ACC_BRAKE : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ACC_REFUSE_ACC_BRAKE : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ACC_INHIBIT_CVRS_BRAKE : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ACC_REFUSE_CVRS_BRAKE : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_VW_PULSE_CAPTURED : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_INHBIT_STEERING_SENSOR : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_INHBIT_YAW_RATE_SENSOR : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_VW_SENSOR_START_UP : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_BRAKEPAD_TEMP_CALC_INH : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_BRAKEPAD_TEMP_CALC_FAIL : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_BRAKEPAD_TEMP_STATE_STOP : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_BRAKEPAD_TEMP_STATE_WAIT : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ACC_INHBIT_ACC_BRK_PAD_TEMP : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EPT_TRG_LO : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_EPT_TRG_HI : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_STEERING_SENSOR : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_YAW_RATE_SENSOR : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_MC_PRESSURE_SENSOR_1B0 : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_FAIL_FR_VW_SENSOR : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_FAIL_FL_VW_SENSOR : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_FAIL_RR_VW_SENSOR : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_FAIL_RL_VW_SENSOR : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_INHBIT_VW_SENSOR : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_REQ_CVT_TCS : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_REQ_CVT_PRS : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CONTROL_MODE_CVT : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_ABS_STATUS_FR_ABS_EBD_ACT : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_STATUS_FL_ABS_EBD_ACT : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_STATUS_RR_ABS_EBD_ACT : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_STATUS_RL_ABS_EBD_ACT : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_1B0h : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1B0h : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_ABS_ENB_VW_SENSOR_ACT : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_BUSY : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 441 VSA_1B9: 5 VSA
+ SG_ VSA_ABS_FL_WHEEL_PULSE_CNT_1B9 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_ABS_FR_WHEEL_PULSE_CNT_1B9 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_ABS_RL_WHEEL_PULSE_CNT_1B9 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_ABS_RR_WHEEL_PULSE_CNT_1B9 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_CHECKSUM_1B9 : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1B9 : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 446 EBB_1BE: 3 EBB
+ SG_ EBB_IG_ON_1BE : 1|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ EBB_BRAKE_PEDAL_ON_STATUS_1BE : 3|2@0+ (1,0) [0|3] ""  Labcar_Receive
+ SG_ EBB_BRAKE_PEDAL_ON_1BE : 4|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ EBB_STATUS_1BE : 7|3@0+ (1,0) [0|7] ""  VSA
+ SG_ EBB_CHECKSUM_1BE : 19|4@0+ (1,0) [0|15] ""  VSA
+ SG_ EBB_ALIVE_COUNTER_1BE : 21|2@0+ (1,0) [0|3] ""  VSA
+
+BO_ 450 EPB_1C2: 8 EPB
+ SG_ EPB_PLANT_SAFETY_MODE_STATUS : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_CHIME : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_APPLIED : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_REQ_INFO_MANREL : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_REQ_INFO_AUTOREL : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_PARK_BUSY : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_REQ_MID : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_WAR_LAMP : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_FAIL : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPB_INHIBIT_ACT : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EPB_REFUSE_ACT : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EPB_STAY_AWAKE_REQ_VSA : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EPB_REQ_BRAKE_CTRL : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EPB_REQ_TARGET_DECELERATION : 23|8@0+ (0.03125,0) [0|7.96875] "m/s~2" Vector__XXX
+ SG_ EPB_STATE : 31|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ EPB_CHECKSUM_1C2 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ EPB_ALIVE_COUNTER_1C2 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 464 MessageID_1D0h: 8 VSA
+ SG_ VSA_ABS_FL_WHEEL_SPEED : 7|15@0+ (0.01,0) [0|327.67] "kph" Vector__XXX
+ SG_ VSA_ABS_FR_WHEEL_SPEED : 8|15@0+ (0.01,0) [0|327.67] "kph" Vector__XXX
+ SG_ VSA_ABS_RL_WHEEL_SPEED : 25|15@0+ (0.01,0) [0|327.67] "kph" Vector__XXX
+ SG_ VSA_ABS_RR_WHEEL_SPEED : 42|15@0+ (0.01,0) [0|327.67] "kph" Vector__XXX
+ SG_ VSA_CHECKSUM_1D0h : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 465 VSA_1D1: 4 VSA
+ SG_ VSA_MP_PRESSURE_1 : 7|10@0+ (0.1,0) [0|102.3] "kPa" Vector__XXX
+ SG_ VSA_MP_PRESSURE_START_UP : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_MP_PRESSURE_ERR_1 : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_1D1 : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1D1 : 29|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 469 EBB_1D5: 3 EBB
+ SG_ EBB_RUNOUT_PRESSURE_1D5 : 7|8@0+ (100,0) [0|25500] "KPa"  Labcar_Receive
+ SG_ EBB_RUNOUT_STATUS_1D5 : 9|2@0+ (1,0) [0|3] ""  Labcar_Receive
+ SG_ EBB_BRAKE_PEDAL_ON_STATUS_1D5 : 11|2@0+ (1,0) [0|3] ""  Labcar_Receive
+ SG_ EBB_BRAKE_PEDAL_ON_1D5 : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBB_STATUS_1D5 : 15|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ EBB_CHECKSUM_1D5 : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ EBB_ALIVE_COUNTER_1D5 : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ EBB_MID_WARN_STATUS_BRAKESYSTEM : 22|1@0+ (1,0) [0|1] ""  VSA
+ SG_ EBB_MID_WARN_STATUS_BRAKE_1D5 : 23|1@0+ (1,0) [0|1] ""  Labcar_Receive
+
+BO_ 470 ENG_1D6: 2 ENG
+ SG_ ENG_IS_BRK_PRESSURE_1D6 : 7|8@0+ (10,0) [0|2550] "KPa" Vector__XXX
+ SG_ ENG_CHECKSUM_1D6 : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_1D6 : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ENG_ISAB_REQUEST_1D6 : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 472 SS30_1D8: 3 SS30
+ SG_ SS30_TARGET_DECELERATION : 2|11@0- (0.01,0) [-10.24|10.23] "m/s^2" Vector__XXX
+ SG_ SS30_SYSTEM_ACT : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SS30_REQ_PREBRAKE : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SS30_REQ_BRAKE : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SS30_REQ_BRAKEHOLD : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SS30_STATUS_FAIL : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SS30_CHECKSUM_1D8 : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SS30_ALIVE_COUNTER_1D8 : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 476 ENG_1DC: 8 ENG
+ SG_ ENG_IDS_MODE_TARGET : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_IDS_MODE_CONTROL : 55|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_CHECKSUM_1DC : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_1DC : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 479 IDAS_1DF: 8 IDAS
+ SG_ IDAS_TARGET_DECELERATION : 31|11@0- (0.01,0) [-10.24|10.23] ""  VSA
+ SG_ IDAS_REQ_PREFILL : 32|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IDAS_REQ_AEB_BRAKE_CTRL : 33|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IDAS_REQ_ACC_BRAKE_CTRL : 34|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IDAS_REQ_STOP_BRAKE : 35|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IDAS_REQ_BRAKE_RELEASE : 36|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IDAS_STATUS_FAIL_ACC : 40|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IDAS_STATUS_FAIL_AEB : 41|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IDAS_REQ_EPB_ACT : 42|1@0+ (1,0) [0|1] ""  VSA
+ SG_ IDASB_INFO_IND_WARNING_1DF : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ IDAS_CHECKSUM_1DF : 59|4@0+ (1,0) [0|15] ""  VSA
+ SG_ IDAS_ALIVE_COUNTER_1DF : 61|2@0+ (1,0) [0|3] ""  VSA
+ SG_ IDAS_REQ_BRAKERELAY : 63|1@0+ (1,0) [0|1] ""  VSA
+
+BO_ 486 RTC_1E6: 5 A4WS
+ SG_ RTC_TOE_L_1E6 : 7|13@0- (0.0015,0) [-6.144|6.1425] "deg"  VSA
+ SG_ RTC_TOE_R_1E6 : 10|13@0+ (0.0015,0) [-6.144|6.1425] "deg"  VSA
+ SG_ RTC_VP_LIMIT_STATUS_1E6 : 24|1@0+ (1,0) [0|1] ""  VSA
+ SG_ RTC_T_FAIL_STATUS_1E6 : 25|1@0+ (1,0) [0|1] ""  VSA
+ SG_ RTC_P_FAIL_STATUS_1E6 : 26|1@0+ (1,0) [0|1] ""  VSA
+ SG_ RTC_STATUS_INVALID_1E6 : 27|1@0+ (1,0) [0|1] ""  VSA
+ SG_ RTC_CHECKSUM_1E6 : 35|4@0+ (1,0) [0|15] ""  VSA
+ SG_ RTC_ALIVE_COUNTER_1E6 : 37|2@0+ (1,0) [0|3] ""  VSA
+ SG_ RTC_MID_WARN_REQ_1E6 : 38|1@0+ (1,0) [0|1] ""  VSA
+ SG_ RTC_WARN_STATUS_1E6 : 39|1@0+ (1,0) [0|1] ""  VSA
+
+BO_ 487 VSA_1E7: 4 VSA
+ SG_ VSA_CALIPPER_PRESSURE_FL : 7|10@0+ (23.96,-2443.92) [-2443.92|22067.16] "kPa" Vector__XXX
+ SG_ VSA_CALIPPER_PRESSURE_FR : 9|10@0+ (23.96,-2443.92) [-2443.92|22067.16] "kPa" Vector__XXX
+ SG_ VSA_INHBIT_CALIPPER_PRESSURE_FR : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_CALIPPER_PRESSURE_FR : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_INHBIT_CALIPPER_PRESSURE_FL : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FAIL_CALIPPER_PRESSURE_FL : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_1E7 : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1E7 : 29|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_HSA_STATUS_ACT_1E7 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 488 VSA_EPB_1E8: 8 VSA
+ SG_ VSA_EPB_REQ_TARGET_DECEL_1E8 : 4|8@0+ (0.03125,0) [0|7.96875] "m/s^2" Vector__XXX
+ SG_ VSA_EPB_INHIBIT_ACT_1E8 : 5|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ VSA_EPB_REFUSE_ACT_1E8 : 6|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ VSA_EPB_REQ_BRAKE_CTRL_1E8 : 7|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ VSA_EPB_STATE_1E8 : 12|4@0+ (1,0) [0|15] "-" Vector__XXX
+ SG_ VSA_EPB_RESET_FLAG_1E8 : 32|1@0+ (1,0) [0|1] "-" Vector__XXX
+ SG_ VSA_EPB_MESSAGE_COUNTER_1E8 : 39|7@0+ (1,0) [0|127] "-" Vector__XXX
+ SG_ VSA_EPB_MAC_1E8 : 47|24@0+ (1,0) [0|16777215] "-" Vector__XXX
+
+BO_ 489 A4WS_1E9: 5 A4WS
+ SG_ A4WS_RR_STR_SENS1 : 7|10@0- (7.5141291585E-005,0) [-0.038472341292|0.0383972] "rad" Vector__XXX
+ SG_ A4WS_RR_STR_SENS2 : 13|10@0- (7.5141291585E-005,0) [-0.038472341292|0.0383972] "rad" Vector__XXX
+ SG_ RTC_OFF_STATUS : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RTC_VP_LIMIT_STATUS : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RTC_T_FAIL_STATUS : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RTC_P_FAIL_STATUS : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RTC_STATUS_INVALID : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ A4WS_CHECKSUM_1E9 : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ A4WS_ALIVE_COUNTER_1E9 : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ A4WS_FAIL_STATUS : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 490 VSA_1EA: 8 VSA
+ SG_ VSA_MAEPS_US_VALUE : 7|16@0- (0.0038146972656,0) [-125|124.9961853] "deg/s" Vector__XXX
+ SG_ VSA_MAEPS_GX_VALUE : 23|16@0- (0.00015258789063,0) [-5|4.9998474121] "G" Vector__XXX
+ SG_ VSA_MAEPS_MYU_VALUE : 39|16@0- (3.90625E-005,0) [-1.28|1.2799609375] "" Vector__XXX
+ SG_ VSA_MAEPS_REVERSE_F : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_SYSTEM_F : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_1EA : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_1EA : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 493 ENG_1ED: 6 ENG
+ SG_ ENG_POWER_PLANT_SPEED_1ED : 29|15@0+ (1,0) [0|32767] "rpm" Vector__XXX
+ SG_ ENG_CHECKSUM_1ED : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_1ED : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 505 ENG_1F9: 7 ENG
+ SG_ ENG_ACCELE_PEDAL_POSITION_1 : 7|8@0+ (0.39215686275,0) [0|100] "" Vector__XXX
+ SG_ ENG_ACCELE_PEDAL_POSITION_2 : 15|8@0+ (0.39215686275,0) [0|100] "" Vector__XXX
+ SG_ ENG_ACCELE_PEDAL_POSI1_FILTER : 23|8@0+ (0.019607843137,0) [0|5] "" Vector__XXX
+ SG_ ENG_ACCELE_PEDAL_POSI1_DEDBAND : 31|8@0+ (0.019607843137,0) [0|5] "" Vector__XXX
+ SG_ ENG_ACCELE_PEDAL_POSI2_FILTER : 39|8@0+ (0.019607843137,0) [0|5] "" Vector__XXX
+ SG_ ENG_ACCELE_PEDAL_POSI2_DEDBAND : 47|8@0+ (0.019607843137,0) [0|5] "" Vector__XXX
+ SG_ ENG_CHECKSUM_1F9 : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_1F9 : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ENG_BRK_ACCELEPEDAL_ON : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 506 ACC_1FA: 8 ACC
+ SG_ ACC_TARGET_CALIPER_PRESSURE_FL : 7|10@0+ (12.5,0) [0|12787.5] "kPa" Vector__XXX
+ SG_ ACC_TARGET_MOT_LEVEL : 10|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ ACC_EPB_ACT_REQ : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_STATUS_REQ_ACC_BRAKE : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_STATUS_REQ_CVRS_BRAKE : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_STATUS_FAIL_ACC : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_STATUS_FAIL_CVRS_BRAKE : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_REWRITE_START : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_LSF_BHOLD_ACT : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_REQ_BRAKERELAY_ACT : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_TARGET_CALIPER_PRESSURE_FR : 55|10@0+ (12.5,0) [0|12787.5] "kPa" Vector__XXX
+ SG_ ACC_CHECKSUM_1FA : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ACC_ALIVE_COUNTER_1FA : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 517 VSA_205: 8 VSA
+ SG_ VSA_ABS_FL_WHEEL_SPEED_205 : 7|15@0+ (0.01,0) [0|327.67] "km/h"  Labcar_Receive
+ SG_ VSA_ABS_FR_WHEEL_SPEED_205 : 8|15@0+ (0.01,0) [0|327.67] "km/h"  Labcar_Receive
+ SG_ VSA_ABS_FAIL_FR_VW_SENSOR_205 : 24|1@0+ (1,0) [0|1] "-"  Labcar_Receive
+ SG_ VSA_ABS_FAIL_FL_VW_SENSOR_205 : 25|1@0+ (1,0) [0|1] "-"  Labcar_Receive
+ SG_ VSA_ABS_RESET_FLAG_205 : 32|1@0+ (1,0) [0|1] "-"  Labcar_Receive
+ SG_ VSA_ABS_MESSAGE_COUNTER_205 : 39|7@0+ (1,0) [0|127] "-"  Labcar_Receive
+ SG_ VSA_ABS_MAC_205 : 47|24@0+ (1,0) [0|16777215] "-"  Labcar_Receive
+
+BO_ 518 VSA_206: 8 VSA
+ SG_ VSA_ABS_RL_WHEEL_SPEED_206 : 7|15@0+ (0.01,0) [0|327.67] "km/h"  Labcar_Receive
+ SG_ VSA_ABS_RR_WHEEL_SPEED_206 : 8|15@0+ (0.01,0) [0|327.67] "km/h"  Labcar_Receive
+ SG_ VSA_ABS_FAIL_RR_VW_SENSOR_206 : 24|1@0+ (1,0) [0|1] "-"  Labcar_Receive
+ SG_ VSA_ABS_FAIL_RL_VW_SENSOR_206 : 25|1@0+ (1,0) [0|1] "-"  Labcar_Receive
+ SG_ VSA_ABS_RESET_FLAG_206 : 32|1@0+ (1,0) [0|1] "-"  Labcar_Receive
+ SG_ VSA_ABS_MESSAGE_COUNTER_206 : 39|7@0+ (1,0) [0|127] ""  Labcar_Receive
+ SG_ VSA_ABS_MAC_206 : 47|24@0+ (1,0) [0|16777215] "-"  Labcar_Receive
+
+BO_ 531 TRC_213: 8 TRC
+ SG_ TRC_NMOT : 6|15@0+ (1,0) [0|32767] "rpm" Vector__XXX
+ SG_ TRC_CHECKSUM_213 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TRC_ALIVE_COUNTER_213 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 538 VSA_21A: 5 VSA
+ SG_ VSA_ESB_LON_G : 7|10@0+ (0.047851563,-24.5) [-24.5|24.452148949] "" Vector__XXX
+ SG_ VSA_ESB_LON_G_INH1 : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_REQ_BRAKERELAY_ACT : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_INHIBIT_BRKRLY_DIAG_ESB : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_21A : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_21A : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_ESB_LON_G_FAIL : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ESB_LON_G_INH2 : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CALIB_LAT_G : 31|10@0+ (0.047851563,-24.5) [-24.5|24.452148949] "" Vector__XXX
+ SG_ VSA_ABS_CHECKSUM_21A : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ABS_ALIVE_COUNTER_21A : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 545 METER_221: 6 METER
+ SG_ METER_SPORTSW_ON : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_ECONSW_ON : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_CHECKSUM_221 : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_221 : 29|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ METER_SW_STATUS_MODE : 39|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_CHECKSUM_221 : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_221 : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 546 METER_222: 3 METER
+ SG_ METER_IDS_MODE_1 : 7|2@0+ (1,0) [0|3] ""  VSA
+ SG_ METER_CHECKSUM_222 : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_222 : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 555 IMG_22B: 8 IMG
+ SG_ IMG_IDS_GRP_A3_MODE : 15|4@0+ (1,0) [0|15] ""  VSA
+ SG_ IMG_CHECKSUM_22B : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ IMG_ALIVE_COUNTER_22B : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 578 E4WD_242: 2 E4WD
+ SG_ E4WD_REAR_DISTRIBUTION_242 : 7|4@0+ (1,0) [0|15] "Nm" Vector__XXX
+ SG_ E4WD_CHECKSUM_242 : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ E4WD_ALIVE_COUNTER_242 : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 597 VSA_255: 8 VSA
+ SG_ VSA_ABS_FL_WHEEL_SPEED_255 : 7|8@0+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ VSA_ABS_FR_WHEEL_SPEED_255 : 15|8@0+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ VSA_ABS_RL_WHEEL_SPEED_255 : 23|8@0+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ VSA_ABS_RR_WHEEL_SPEED_255 : 31|8@0+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ VSA_ABS_SPEED_FIXED_NUMBER1 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_ABS_SPEED_FIXED_NUMBER2 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_ABS_ALIVE_COUNTER_255 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_ABS_CHECKSUM_255 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 660 MessageID_294h: 8 METER
+ SG_ METER_ODO_DATA : 31|24@0+ (1,0) [0|16777215] "km" Vector__XXX
+ SG_ METER_CHECKSUM_294h : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_294h : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 661 MessageID_295h: 4 METER
+ SG_ METER_DWS_INIT_REQ_SW : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_DWS_INIT_REQUEST : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_CHECKSUM_295h : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_295h : 29|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ METER_SW_STATUS_HILL_CONTROL_295 : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 668 VSA_29C: 8 VSA
+ SG_ VSA_TRIP_COUNTER_29C : 7|26@0+ (1,0) [0|67108863] "-"  Labcar_Receive
+ SG_ VSA_MAC_29C : 29|38@0+ (1,0) [0|274877906943] "-"  Labcar_Receive
+
+BO_ 669 VSA_29D: 8 VSA
+ SG_ VSA_RESET_COUNTER_29D : 7|26@0+ (1,0) [0|67108863] "-"  Labcar_Receive
+ SG_ VSA_MAC_29D : 29|38@0+ (1,0) [0|274877906944] "-"  Labcar_Receive
+
+BO_ 773 SRS_305: 7 SRS
+ SG_ SRS_DR_BELT : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SRS_PS1_BELT_STATUS : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SRS_DR_BELT_STATUS : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SRS_CHECKSUM_305 : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SRS_ALIVE_COUNTER_305 : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 795 VSA_31B: 8 VSA
+ SG_ VSA_MID_WARN_STATUS_PUNCTURE : 0|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_WARN_STATUS_DWS : 1|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_WARN_STATUS_TSA : 2|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_WARN_STATUS_HSA_31B : 3|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_WARN_STATUS_BRAKESYSTEM : 4|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_WARN_STATUS_BRAKE : 5|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_REQUEST_VSA_31B : 6|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_WARN_STATUS_ABS : 7|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_WARN_STATUS_HDC_31B : 13|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_WARN_STATUS_BHOLD_31B : 14|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_REQ_BHOLD_APPLY_BRK_31B : 15|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_REQ_BHOLD_MISOP_GUID_31B : 28|2@0+ (1,0) [0|3] ""  Labcar_Receive
+ SG_ VSA_MID_LAMP_STATUS_HDC_OFF : 29|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_REQ_BHOLD_EPB_OP_INF_31B : 30|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_REQ_BHOLD_STANDBY_31B : 31|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_REQUEST_VSA_OFF : 37|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_REQUEST_TCS_OFF : 38|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_LAMP_STATUS_VSA_OFF : 39|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ VSA_MID_REQUEST_IDS : 47|4@0+ (1,0) [0|15] ""  Labcar_Receive
+ SG_ VSA_CHECKSUM_31B : 59|4@0+ (1,0) [0|15] ""  Labcar_Receive
+ SG_ VSA_ALIVE_COUNTER_31B : 61|2@0+ (1,0) [0|3] ""  Labcar_Receive
+
+BO_ 804 MessageID_324h: 8 ENG
+ SG_ ENG_ENG_COOLANT_TEMP : 7|8@0+ (1,-40) [-40|215] "Åé" Vector__XXX
+ SG_ ENG_INTAKE_AIR_TEMP : 15|8@0+ (1,-40) [-40|215] "Åé" Vector__XXX
+ SG_ ENG_SW_STATUS_SCS : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CHECKSUM_324h : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_324h : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ENG_EM_TEST_MODE_ENABLE : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 806 METER_326: 8 METER
+ SG_ METER_RL_STATUS_326 : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_BHOLD_326 : 20|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ METER_SW_STATUS_PARK_BRAKE_326 : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_BRAKE_FLUID_326 : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_SW_STATUS_VSA_OFF_326 : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_CHECKSUM_326 : 59|4@0+ (1,0) [0|15] ""  SRS,EPS,ACC
+ SG_ METER_ALIVE_COUNTER_326 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 808 ENG_328: 8 ENG
+ SG_ ENG_STRNNEND : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENG_CHECKSUM_328 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_328 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 819 TPMS_333: 7 TPMS
+ SG_ TPMS_WARN_STATUS_ISO : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TPMS_WARN_STATUS_SYSTEM : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TPMS_CHECKSUM_333 : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TPMS_ALIVE_COUNTER_333 : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 884 METER_374: 8 METER
+ SG_ METER_OUTTEMP : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ METER_CHECKSUM_374 : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_374 : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ METER_CHECKSUM_374 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_374 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 927 ACC_39F: 8 ACC
+ SG_ ACC_LSF_STOP_BHOLD_ACT : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACC_CHECKSUM_39F : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ACC_ALIVE_COUNTER_39F : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 929 METER_3A1: 8 METER
+ SG_ METER_DWS_INIT_REQ_SW_3A1 : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_DWS_INIT_REQ_3A1 : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_CHECKSUM_3A1 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_3A1 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 985 VSA_3D9: 3 VSA
+ SG_ VSA_ABS_ACT_EDR : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_STABILITY_CTRL_ACT_EDR : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_VSA_OFF_STATUS_EDR : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_ABS_DISABLE_EDR : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_STABILITY_CTRL_DISABLE_EDR : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_STABILITY_CTRL1_DISABLE_EDR : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_STABILITY_CTRL2_DISABLE_EDR : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_VSA_EQUIPPED_EDR : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_3D9 : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_3D9 : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_VEHCLE_STANDSTILL : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1029 MessageID_405h: 8 METER
+ SG_ METER_WARN_STATUS_TIRE_PRESS : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_WARN_STATUS_TPMS_SYSTEM : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ METER_CHECKSUM_405h : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_405h : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1030 VSA_406: 5 VSA
+ SG_ VSA_DTC_HIGH : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_DTC_LOW : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_SPECIFY_CODE_SYS : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_DTC_STORAGE : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_406 : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_406 : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1071 SWTCH_42F: 2 SWTCH
+ SG_ SWTCH_DRIVE_MODE_SW : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SWTCH_CHECKSUM_42F : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SWTCH_ALIVE_COUNTER_42F : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1075 VSA_433: 8 VSA
+ SG_ VSA_FREEZE_DISCERN_COUNTER : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_FREEZE_SYNCHRO_COUNTER : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_FREEZE_LEVEL : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_FREEZE_BYTE2 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_FREEZE_BYTE3 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_FREEZE_BYTE4 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_FREEZE_BYTE5 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_FREEZE_BYTE6 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_FREEZE_BYTE7 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_CHECKSUM_433 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_433 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1108 ENG_454: 8 ENG
+ SG_ ENG_ATMOSPHERIC_PRESSURE_454 : 15|8@0+ (2.685,91.4) [91.4|776.075] "mmHg"  VSA
+ SG_ ENG_FAIL_PA_454 : 20|1@0+ (1,0) [0|1] ""  VSA
+ SG_ ENG_CHECKSUM_454 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ENG_ALIVE_COUNTER_454 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1302 METER_516: 8 METER
+ SG_ METER_ODO_DATA_516 : 7|24@0+ (1,0) [0|16777215] "km" Vector__XXX
+ SG_ METER_CHECKSUM_516 : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ METER_ALIVE_COUNTER_516 : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1424 VSA_590: 5 VSA
+ SG_ VSA_DTC_HIGH_BYTE : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_DTC_LOW_BYTE : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_DTC_FTB : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_DTC_SYSTEM_DESIGNATOR_BIT : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_DTC_STORAGE_STATUS : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FTB_STATUS_BIT : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_590 : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_590 : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1568 BCM_620: 2 BCM
+ SG_ BCM_ID_REQ_VSA_REC : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_ID_REQ_VSA : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_CHECKSUM_620 : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ BCM_ALIVE_COUNTER_620 : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1619 VSA_653: 8 VSA
+ SG_ VSA_DTC_HIGH_BYTE_653 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_DTC_LOW_BYTE_653 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_DTC_FTB_653 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_DTC_SYSTEM_DESIGNATOR_B_653 : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_DTC_STORAGE_STATUS_653 : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_FTB_STATUS_BIT_653 : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_CHECKSUM_653 : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_653 : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1646 VSA_66E: 8 VSA
+ SG_ VSA_OBS_VALIB_Yaw : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_VALIB_SAS : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_VALIB_Ay : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_VALIB_Ax : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_MCPS_OFFSET : 35|4@0+ (100,-700) [0|800] "kPa" Vector__XXX
+ SG_ VSA_OBS_ACT_VSA : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_ACT_HSA : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_ACT_ETCS : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_ACT_BTCS : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_ACT_AHA : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_ACT_ABH : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_IG_VOLT : 7|8@0+ (0.1,0) [0|25.5] "v" Vector__XXX
+ SG_ VSA_OBS_VEH_MODEINFO : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_OBS_OFFMODE_INFO : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_OBS_ACT_EBD : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_ACT_ABS : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_ACT_BAS : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_ADD_FUNC : 27|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_CHECKSUM_66E : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_66E : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VSA_OBS_OVERWRITE : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VSA_OBS_TRIGGER : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1571 VSA_623: 3 VSA
+ SG_ VSA_ID : 7|16@0+ (1,0) [1|65535] "" Vector__XXX
+ SG_ VSA_CHECKSUM_623 : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_623 : 21|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1670 EBB_686: 5 EBB
+ SG_ EBB_DTC_HIGH_BYTE_686 : 7|8@0+ (1,0) [0|255] ""  Labcar_Receive
+ SG_ EBB_DTC_LOW_BYTE_686 : 15|8@0+ (1,0) [0|255] ""  Labcar_Receive
+ SG_ EBB_DTC_FTB_686 : 23|8@0+ (1,0) [0|255] ""  Labcar_Receive
+ SG_ EBB_DTC_SYSTEM_DESIGNATOR_BIT_68 : 24|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ EBB_DTC_STORAGE_STATUS_686 : 25|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ EBB_FTB_STATUS_BIT_686 : 26|1@0+ (1,0) [0|1] ""  Labcar_Receive
+ SG_ EBB_CHECKSUM_686 : 35|4@0+ (1,0) [0|15] ""  Labcar_Receive
+ SG_ EBB_ALIVE_COUNTER_686 : 37|2@0+ (1,0) [0|3] ""  Labcar_Receive
+
+BO_ 1934 VSA_78E: 8 VSA
+ SG_ VSA_COMMAND_CODE : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VSA_CHECKSUM_78E : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ VSA_ALIVE_COUNTER_78E : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2564550641 ID18DBEFF1h_Func: 8 TESTER
+ SG_ ID18DBEFF1_B7 : 56|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DBEFF1_B6 : 48|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DBEFF1_B5 : 40|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DBEFF1_B4 : 32|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DBEFF1_B1 : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DBEFF1_B0 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ID18DBEFF1_B2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ID18DBEFF1_B3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2663391436 HDS_1EC020CC: 5 ICC
+ SG_ ICC_IDS_MODE_REQ_VSA : 8|3@0+ (1,0) [0|7] ""  VSA
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 356 METER_SW_STATUS_PARK_BRAKE_164 "Parking Brake switch ON";
+CM_ SG_ 356 METER_SW_STATUS_BRAKE_FLUID_164 "SN level switch ON";
+CM_ SG_ 356 METER_SW_STATUS_VSA_OFF_164 "PATA switch ON";
+CM_ SG_ 356 METER_CHECKSUM_164h "CAN Checksum (164h)";
+CM_ SG_ 356 METER_ALIVE_COUNTER_164h "CAN Alive Counter (164h)";
+CM_ SG_ 380 ENG_ENG_SPEED "Engine speed";
+CM_ SG_ 380 ENG_CRUISE_STATUS_CRUISE_ACT "Cruise control active";
+CM_ SG_ 380 ENG_CHECKSUM_17Ch "CAN_CHECKSUM (17Ch)";
+CM_ SG_ 380 ENG_ALIVE_COUNTER_17Ch "CAN Alive Counter (17Ch)";
+CM_ SG_ 420 VSA_VSA_ACT "VSA, TCS active";
+CM_ SG_ 420 VSA_ABS_ACT "ABS, EBD active";
+CM_ SG_ 420 VSA_VSA_MIL "VSA, TCS failed";
+CM_ SG_ 420 VSA_ABS_MIL "ABS, EBD failed";
+CM_ SG_ 420 VSA_LAMP_STATUS_OPERATE_VSA "ESPINFO LAMP ON";
+CM_ SG_ 420 VSA_WARN_STATUS_VSA "ESPSILA ON";
+CM_ SG_ 420 VSA_WARN_STATUS_ABS "ABSSILA ON";
+CM_ SG_ 420 VSA_WARN_STATUS_BRAKE "EBDSILA ON";
+CM_ SG_ 420 VSA_CHECKSUM_1A4h "CAN Checksum (1A4h)";
+CM_ SG_ 420 VSA_ALIVE_COUNTER_1A4h "CAN Alive Counter (1A4h)";
+CM_ SG_ 426 VSA_REQ_TRQ "Crank Shaft Torque requested by VSA";
+CM_ SG_ 426 VSA_TRQ_CONTROL_MODE "Torque control mode";
+CM_ SG_ 426 VSA_SHIFT_REQ "VSA Shift control request";
+CM_ SG_ 426 VSA_TRQ_DOWN_REQ_FUEL_CUT "Fuel control requested by VSA";
+CM_ SG_ 426 VSA_MASTER_CYLINDER_PRESSURE_1AA "Master Cylinder Pressure";
+CM_ SG_ 426 VSA_CHECKSUM_1AAh "CAN Checksum (1AAh)";
+CM_ SG_ 426 VSA_ALIVE_COUNTER_1AAh "CAN Alive Counter (1AAh)";
+CM_ SG_ 432 VSA_ABS_FAIL_FR_VW_SENSOR "WSS FR fault";
+CM_ SG_ 432 VSA_ABS_FAIL_FL_VW_SENSOR "WSS FL fault";
+CM_ SG_ 432 VSA_ABS_FAIL_RR_VW_SENSOR "WSS RR fault";
+CM_ SG_ 432 VSA_ABS_FAIL_RL_VW_SENSOR "WSS RL fault";
+CM_ SG_ 432 VSA_CHECKSUM_1B0h "CAN Checksum (1B0h)";
+CM_ SG_ 432 VSA_ALIVE_COUNTER_1B0h "CAN Alive Counter (1B0h)";
+CM_ SG_ 464 VSA_ABS_FL_WHEEL_SPEED "V_FL";
+CM_ SG_ 464 VSA_ABS_FR_WHEEL_SPEED "V_FR";
+CM_ SG_ 464 VSA_ABS_RL_WHEEL_SPEED "V_RL";
+CM_ SG_ 464 VSA_ABS_RR_WHEEL_SPEED "V_RR";
+CM_ SG_ 464 VSA_CHECKSUM_1D0h "CAN Checksum (1D0h)";
+CM_ SG_ 804 ENG_SW_STATUS_SCS "SCS switch ON";
+CM_ SG_ 804 ENG_CHECKSUM_324h "CAN Checksum (324h)";
+CM_ SG_ 804 ENG_ALIVE_COUNTER_324h "CAN Alive Counter (324h)";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_ "BusType" "CAN";
+BA_ "SystemSignalLongSymbol" SG_ 304 ENG_SMART_ACCELE_PEDAL_POSITION_ "ENG_SMART_ACCELE_PEDAL_POSITION_130";
+

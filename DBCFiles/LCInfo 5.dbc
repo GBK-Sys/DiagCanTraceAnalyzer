@@ -1,0 +1,280 @@
+VERSION "DNNBNNNYNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: LC ANALYZER
+
+
+BO_ 1804 LC_INFO_14: 8 LC
+ SG_ VSO_Frequency : 0|16@1+ (1,0.01) [0|200] "" Vector__XXX
+
+BO_ 1803 LC_INFO_13: 8 LC
+ SG_ LCI_I_MV_16 : 30|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_15 : 20|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_14 : 10|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_13 : 0|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+
+BO_ 1802 LC_INFO_12: 8 LC
+ SG_ LCI_I_MV_9 : 50|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_8 : 40|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_7 : 30|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_12 : 20|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_11 : 10|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_10 : 0|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+
+BO_ 1801 LC_INFO_11: 8 LC
+ SG_ LCI_I_MV_6 : 50|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_5 : 40|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_4 : 30|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_3 : 20|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_2 : 10|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+ SG_ LCI_I_MV_1 : 0|10@1- (0.05,0) [-25.6|25.55] "A" Vector__XXX
+
+BO_ 1826 RBNT_ControlMessage_02: 8 LC
+ SG_ CtrlMsg2_Byte7 : 56|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CtrlMsg2_Byte6 : 48|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CtrlMsg2_Byte5 : 40|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CtrlMsg2_Byte4 : 32|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CANMANIPCYLS : 16|16@1+ (1,0) [0|65535] ""  ANALYZER
+ SG_ CANCTRL : 8|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CANTRG : 0|8@1+ (1,0) [0|255] ""  ANALYZER
+
+BO_ 1825 RBNT_ControlMessage_01: 8 LC
+ SG_ CtrlMsg1_Byte7 : 56|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CtrlMsg1_Byte6 : 48|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CtrlMsg1_Byte5 : 40|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CANMSGDLC : 32|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ CANMSGID : 0|32@1+ (1,0) [0|4294967295] ""  ANALYZER
+
+BO_ 1800 LC_INFO_10: 8 LC
+ SG_ LC_I_MV_SV : 10|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LC_I_MV_PCR : 0|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+
+BO_ 1787 LC_INFO_NG7_01: 8 LC
+ SG_ B_PATA2 : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ B_PATA1 : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BS : 8|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ UZ1 : 7|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ B_SW6 : 6|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ B_SW5 : 5|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ B_SW4 : 4|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ B_SW3 : 3|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ B_SW2 : 2|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ B_SW1 : 1|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ B_SN : 0|1@1+ (1,0) [0|1] ""  ANALYZER
+
+BO_ 1788 LC_INFO_NG7_08: 8 LC
+ SG_ INFO : 40|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L5 : 35|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L4 : 32|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L3 : 27|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L2 : 24|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L1 : 19|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ MFL : 16|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ ABS_ACTIVE : 8|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ ACC_ACTIVE : 11|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ BA_SILA : 3|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ EHB_SILA : 0|3@1+ (1,0) [0|7] ""  ANALYZER
+
+BO_ 1789 LC_INFO_ET_08: 8 LC
+ SG_ BLA : 3|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ ESP2_SILA : 0|3@1+ (1,0) [0|7] ""  ANALYZER
+
+BO_ 1790 LC_INFO_ET_07: 8 LC
+ SG_ ECU_current_ECU : 32|12@1+ (20,0) [0|4095] ""  ANALYZER
+ SG_ ECU_current_VR : 16|12@1+ (20,0) [0|4095] ""  ANALYZER
+ SG_ ECU_current_MR : 0|12@1+ (20,0) [0|4095] ""  ANALYZER
+
+BO_ 1791 LC_INFO_09: 8 LC
+ SG_ LCI_Teststep : 48|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ LCI_Custom_9 : 8|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ LCI_Custom_13 : 40|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ LCI_Custom_12 : 32|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ LCI_Custom_11 : 24|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ LCI_Custom_10 : 16|8@1+ (1,0) [0|255] ""  ANALYZER
+ SG_ LCI_B_Custom_8 : 7|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_Custom_7 : 6|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_Custom_6 : 5|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_Custom_5 : 4|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_Custom_4 : 3|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_Custom_3 : 2|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_Custom_2 : 1|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_Custom_1 : 0|1@1+ (1,0) [0|1] ""  ANALYZER
+
+BO_ 1799 LC_INFO_08_Lamps: 8 LC
+ SG_ APB2_SILA : 60|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ HDC_SILA : 54|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ AVH_SILA : 57|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ APB_SILA : 51|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ MIL_SILA : 48|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ PALA : 30|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ MFL : 27|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L5 : 45|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L4 : 42|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L3 : 39|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L2 : 36|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ L1 : 33|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ INFO : 24|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ ESP_SILA : 6|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ EHB_SILA : 9|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ EBV_SILA : 12|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ BA_SILA : 15|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ TCS_SILA : 3|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ ACC_ACTIVE : 21|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ ABS_SILA : 0|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ ABS_ACTIVE : 18|3@1+ (1,0) [0|7] ""  ANALYZER
+
+BO_ 1798 LC_INFO_07: 8 LC
+ SG_ LCI_ValveRelayVoltage : 16|8@1- (0.16,0) [-20.48|20.32] "" Vector__XXX
+ SG_ LCI_YawRate : 40|8@1- (1,0) [-128|127] "deg/sec"  ANALYZER
+ SG_ LCI_UVR : 24|8@1- (0.16,0) [-20.48|20.32] "V"  ANALYZER
+ SG_ LCI_MotorRelayVoltage : 32|8@1- (0.16,0) [-20.48|20.32] "V"  ANALYZER
+ SG_ LCI_ECU_current : 0|12@1+ (0.05,0) [0|100] "A"  ANALYZER
+ SG_ LCI_ay : 48|8@1- (0.1,0) [-12.8|12.7] "m/s2"  ANALYZER
+ SG_ LCI_ax : 56|8@1- (0.1,0) [-12.8|12.7] "m/s2"  ANALYZER
+
+BO_ 1797 LC_INFO_05: 8 LC
+ SG_ LCI_v_Wheel_RearRight_kmh : 39|13@1- (0.1,0) [-409.6|409.5] "km/h"  ANALYZER
+ SG_ LCI_v_Wheel_RearLeft_kmh : 26|13@1- (0.1,0) [-409.6|409.5] "km/h"  ANALYZER
+ SG_ LCI_v_Wheel_FrontRight_kmh : 13|13@1- (0.1,0) [-409.6|409.5] "km/h"  ANALYZER
+ SG_ LCI_v_Wheel_FrontLeft_kmh : 0|13@1- (0.1,0) [-409.6|409.5] "km/h"  ANALYZER
+ SG_ LCI_v_VehicleSpeed_kmh : 52|12@1+ (0.15,-100) [-100|514.25] "km/h"  ANALYZER
+
+BO_ 1796 LC_INFO_04: 8 LC
+ SG_ LCI_I_MV_USV2_A : 30|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_USV1_A : 20|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_RR_DOWN_A : 10|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_LR_DOWN_A : 0|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_ASV2_A : 50|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_ASV1_A : 40|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+
+BO_ 1795 LC_INFO_03: 8 LC
+ SG_ LCI_I_MV_RR_UP_A : 30|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_RF_UP_A : 10|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_RF_DOWN_A : 50|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_LR_UP_A : 20|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_LF_UP_A : 0|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+ SG_ LCI_I_MV_LF_DOWN_A : 40|10@1- (0.05,0) [-25.6|25.55] "A"  ANALYZER
+
+BO_ 1794 LC_INFO_02: 8 LC
+ SG_ LCI_pMBC : 16|8@1+ (1.5,0) [0|382.5] "bar"  ANALYZER
+ SG_ LCI_pC2 : 0|8@1+ (1.5,0) [0|382.5] "bar"  ANALYZER
+ SG_ LCI_pC1 : 8|8@1+ (1.5,0) [0|382.5] "bar"  ANALYZER
+ SG_ LCI_pBC_RearRight : 48|8@1+ (1.5,0) [0|382.5] "bar"  ANALYZER
+ SG_ LCI_pBC_RearLeft : 40|8@1+ (1.5,0) [0|382.5] "bar"  ANALYZER
+ SG_ LCI_pBC_FrontRight : 32|8@1+ (1.5,0) [0|382.5] "bar"  ANALYZER
+ SG_ LCI_pBC_FrontLeft : 24|8@1+ (1.5,0) [0|382.5] "bar"  ANALYZER
+
+BO_ 1793 LC_INFO_01: 8 LC
+ SG_ LCI_B_APB : 57|3@1+ (1,0) [0|7] ""  ANALYZER
+ SG_ LCI_B_AVH : 62|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_HID : 47|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_UZ3 : 61|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_UZ1 : 60|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_SteeringAngle : 12|12@1- (1,0) [-2048|2047] "deg"  ANALYZER
+ SG_ LCI_PATA : 56|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_DrvBrakePedal : 32|8@1+ (0.4,0) [0|102] "%"  ANALYZER
+ SG_ LCI_DrvAccPedal : 24|8@1+ (0.4,0) [0|102] "%"  ANALYZER
+ SG_ LCI_BS : 48|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_BLS : 52|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_BatteryVoltage : 0|12@1- (0.02,0) [-40.96|40.94] "V"  ANALYZER
+ SG_ LCI_B_SW6 : 45|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_SW5 : 44|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_SW4 : 43|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_SW3 : 42|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_SW2 : 41|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_SW1 : 40|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_SN : 46|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_MSR : 51|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_ASR_slow : 50|1@1+ (1,0) [0|1] ""  ANALYZER
+ SG_ LCI_B_ASR_fast : 49|1@1+ (1,0) [0|1] ""  ANALYZER
+
+BO_TX_BU_ 1793 : LC,ANALYZER;
+
+
+CM_ BO_ 1826 "Custom message for RBNT";
+CM_ BO_ 1825 "Custom message for RBNT";
+CM_ SG_ 1791 LCI_Teststep "Signal LCI_Teststep for customer specific stimuli usage";
+CM_ SG_ 1791 LCI_Custom_9 "Signal LCI_Custom_9 for customer specific usage";
+CM_ SG_ 1791 LCI_Custom_13 "Signal LCI_Custom_13 for customer specific usage";
+CM_ SG_ 1791 LCI_Custom_12 "Signal LCI_Custom_12 for customer specific usage";
+CM_ SG_ 1791 LCI_Custom_11 "Signal LCI_Custom_11 for customer specific usage";
+CM_ SG_ 1791 LCI_Custom_10 "Signal LCI_Custom_10 for customer specific usage";
+CM_ SG_ 1791 LCI_B_Custom_8 "Flag LCI_B_Custom_8 for customer specific usage";
+CM_ SG_ 1791 LCI_B_Custom_7 "Flag LCI_B_Custom_7 for customer specific usage";
+CM_ SG_ 1791 LCI_B_Custom_6 "Flag LCI_B_Custom_6 for customer specific usage";
+CM_ SG_ 1791 LCI_B_Custom_5 "Flag LCI_B_Custom_5 for customer specific usage";
+CM_ SG_ 1791 LCI_B_Custom_4 "Flag LCI_B_Custom_4 for customer specific usage";
+CM_ SG_ 1791 LCI_B_Custom_3 "Flag LCI_B_Custom_3 for customer specific usage";
+CM_ SG_ 1791 LCI_B_Custom_2 "Flag LCI_B_Custom_2 for customer specific usage";
+CM_ SG_ 1791 LCI_B_Custom_1 "Flag LCI_B_Custom_1 for customer specific usage";
+CM_ SG_ 1798 LCI_MotorRelayVoltage "U_MR_P.EID2HYM.CS_HYM";
+CM_ SG_ 1794 LCI_pMBC "vl_PressureMainBrakeCylinder_co.MergerVDM2EID";
+CM_ SG_ 1794 LCI_pC2 "vl_PressureCircle1_co.MergerVDM2EID";
+CM_ SG_ 1794 LCI_pC1 "vl_PressureCircle1_co.MergerVDM2EID";
+CM_ SG_ 1793 LCI_UZ3 "vl_UZ3_sd.MergerVDM2EID";
+CM_ SG_ 1793 LCI_UZ1 "vl_UZ1_sd.MergerVDM2EID";
+CM_ SG_ 1793 LCI_SteeringAngle "vl_SteeringAngle_co.MergerVDM2EID";
+CM_ SG_ 1793 LCI_PATA "VDYM value PATA, vl_PATA1_sd.MergerVDM2EID";
+CM_ SG_ 1793 LCI_BS "vl_BS_sd.MergerVDM2EID";
+CM_ SG_ 1793 LCI_BLS "vl_BLS_sd.MergerVDM2EID";
+CM_ SG_ 1793 LCI_BatteryVoltage "MMC_UBATT_AD";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 1000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgCycleTime" 10;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 1791 10;
+BA_ "GenMsgCycleTime" BO_ 1798 10;
+BA_ "GenMsgCycleTime" BO_ 1797 10;
+BA_ "GenMsgCycleTime" BO_ 1796 10;
+BA_ "GenMsgCycleTime" BO_ 1795 10;
+BA_ "GenMsgCycleTime" BO_ 1794 10;
+BA_ "GenMsgCycleTime" BO_ 1793 10;
+VAL_ 1799 PALA 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 MFL 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 L5 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 L4 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 L3 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 L2 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 L1 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 INFO 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 ESP_SILA 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 EHB_SILA 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 EBV_SILA 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 BA_SILA 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 TCS_SILA 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 ACC_ACTIVE 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 ABS_SILA 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+VAL_ 1799 ABS_ACTIVE 7 "not_used" 2 "undefined" 1 "on_red" 0 "off_green" ;
+

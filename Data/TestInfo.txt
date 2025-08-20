@@ -1,0 +1,132 @@
+=> OK -> all expected faults found AND there is no other fault entry
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089)
+(089) --> evaluate CAN signals (read_CAN_signals)
+(089)
+--> evaluate for reading no. 1
+(089) Evaluating 3 against 3
+(089) Signal 'VSA_RR_ROT_DIRECTION' : 3 (expected) == 3 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against 0
+(089) Signal 'VSA_ABS_RL_WHEEL_SPEED' : 0 (expected) == 0 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 3 against 3
+(089) Signal 'VSA_RL_ROT_DIRECTION' : 3 (expected) == 3 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against 0
+(089) Signal 'VSA_ABS_FL_WHEEL_SPEED' : 0 (expected) == 0 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 3 against 3
+(089) Signal 'VSA_FR_ROT_DIRECTION' : 3 (expected) == 3 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against 0
+(089) Signal 'VSA_ABS_RR_WHEEL_SPEED' : 0 (expected) == 0 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 3 against 3
+(089) Signal 'VSA_FL_ROT_DIRECTION' : 3 (expected) == 3 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against 0
+(089) Signal 'VSA_ABS_FR_WHEEL_SPEED' : 0 (expected) == 0 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089)
+--> evaluate for reading no. 2
+(089) Evaluating 1 against 1
+(089) Signal 'VSA_RR_ROT_DIRECTION' : 1 (expected) == 1 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against <30
+(089) Signal 'VSA_ABS_RL_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 1 against 1
+(089) Signal 'VSA_RL_ROT_DIRECTION' : 1 (expected) == 1 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against <30
+(089) Signal 'VSA_ABS_FL_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 1 against 1
+(089) Signal 'VSA_FR_ROT_DIRECTION' : 1 (expected) == 1 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against <30
+(089) Signal 'VSA_ABS_RR_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 1 against 1
+(089) Signal 'VSA_FL_ROT_DIRECTION' : 1 (expected) == 1 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against <30
+(089) Signal 'VSA_ABS_FR_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089)
+--> evaluate for reading no. 3
+(089) Evaluating 2 against 2
+(089) Signal 'VSA_RR_ROT_DIRECTION' : 2 (expected) == 2 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against <30
+(089) Signal 'VSA_ABS_RL_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 2 against 2
+(089) Signal 'VSA_RL_ROT_DIRECTION' : 2 (expected) == 2 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against <30
+(089) Signal 'VSA_ABS_FL_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 2 against 2
+(089) Signal 'VSA_FR_ROT_DIRECTION' : 2 (expected) == 2 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against <30
+(089) Signal 'VSA_ABS_RR_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 2 against 2
+(089) Signal 'VSA_FL_ROT_DIRECTION' : 2 (expected) == 2 (detected)
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
+(089) Evaluating 0 against <30
+(089) Signal 'VSA_ABS_FR_WHEEL_SPEED' : interval -oo < 0 < 30 fullfilled
+(089) ---> VERDICT_PASS <--- (this evaluation step)
+(089) Testcase verdict is VERDICT_PASS (previous & current)
+(089) VERDICT change RB_UNIVERSAL_01J.7_24_CheckWheelRotationDirection_D_R : VERDICT_PASS -> VERDICT_PASS (was already set)
